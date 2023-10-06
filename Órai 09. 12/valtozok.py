@@ -27,6 +27,6 @@ print(szam/10)
 szam=12
 print(szam%9)
 
-print(szam//10)
+print(szam%10)
 print(szam//13)
 print(szam//5)
