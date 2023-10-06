@@ -1,7 +1,7 @@
 # Mértékegység átváltó
 # Boti Lóránt 2023.10.06
 # Projektfeladat
-#listák
+# listák
 tipusok= ["Hosszúság","Terület", "Térfogat", "Tömeg", "Űrmérték", "Űrmérték + Térfogat"]
 egysegek= [["mm","cm","dm","m","km"],
            ["mm2","cm2","dm2","m2","km2"],
@@ -13,12 +13,10 @@ egysegek= [["mm","cm","dm","m","km"],
 valtok= [[10,10,10,100,1],
            [100,100,100,1000000,1],
            [1000,1000,1000,1000000000,1],
-           [],
-           [],
+           [10,100,1000,1],
+           [10,10,10,10,100,1],
            [],
            ]
-
-
 
 print("#"*35)
 #for elem in tipusok:
@@ -84,7 +82,7 @@ if egysegId<egysegId2:
     #print(valtok[tipusId][egysegId:egysegId2])
     szorzo=1
     for e in valtok[tipusId][egysegId:egysegId2]:
-        szorzó*=e
+        szorzo*=e
     eredmeny=szam/szorzo
 else:
     szorzo=1
@@ -95,6 +93,7 @@ else:
 
 
 print(szam,egysegek[tipusId][egysegId],eredmeny, egysegek [tipusId][egysegId2])
+
 
 
 
