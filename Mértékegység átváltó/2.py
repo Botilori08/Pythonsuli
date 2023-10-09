@@ -60,7 +60,8 @@ while egysegId!=0 or tipusId!=0 or egysegId2!=0:
                 raise
         except:
             print("Válassz a listából!")
-
+    if egysegId==0:
+        break
 
     print("Cél:")
 
@@ -76,7 +77,8 @@ while egysegId!=0 or tipusId!=0 or egysegId2!=0:
                 raise
         except:
             print("Válassz a listából!")
-
+    if egysegId2==0:
+        break
 
     szam=float(input("Mennyiség: "))
 
