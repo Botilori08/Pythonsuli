@@ -1,4 +1,6 @@
 bekert = input("írj be listaelemeket! ")
 lista=bekert.split(",")
+print(lista)
+print("#"*50)
 lista.sort()
 print(lista)
