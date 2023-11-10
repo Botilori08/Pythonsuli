@@ -6,15 +6,15 @@ msh = ["b", "c", "d","dz","dzs","f", "g", "gy","h","j","k","l","ly","m","n","ny"
 choose = []
 valasztas = ["0", "1"]
 
+#while len(choose)< 5:
+#    i = random.choice(msh+mgh)
+#    if i not in choose:
+#        choose.append(i)
+#print(choose)
+#print("#"*80)
 while len(choose)< 5:
-    i = random.choice(msh+mgh)
-    if i not in choose:
-        choose.append(i)
-print(choose)
-print("#"*80)
-while len(choose)< 5:
-    i = random.choice(valasztas)
-    if i == "0":
+    a = random.choice(valasztas)
+    if a == "0":
         y = random.choice(mgh)
         choose.append(y)
         y = random.choice(msh)
@@ -25,7 +25,7 @@ while len(choose)< 5:
         choose.append(y)
         y = random.choice(mgh)
         choose.append(y)
-    elif i == "1":
+    elif a == "1":
         y = random.choice(msh)
         choose.append(y)
         y = random.choice(mgh)
