@@ -25,7 +25,7 @@ while len(choose)< 5:
         choose.append(y)
         y = random.choice(mgh)
         choose.append(y)
-    else:
+    elif i == "1":
         y = random.choice(msh)
         choose.append(y)
         y = random.choice(mgh)
