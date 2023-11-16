@@ -58,10 +58,10 @@ while True:
         print("Sajnos ez a fordítás még nem készült el!")
 
 if nyelvid[nyelvlista[nyelvvalasztas]] =="szovegHun":
-           import szovegHun as t
+           import szovegHUN as t
 
 elif nyelvid[nyelvlista[nyelvvalasztas]] =="szovegEng":
-             import szovegEng as t
+            import szovegEng as t
 
 
 #import nyelvid[nyelvlista[][nyelvvalasztas] as t
@@ -161,14 +161,27 @@ tortenet=[
             14,#szál ID
             t.text["Odaértünk a teremhez. Ott voltak a többiek. \nNagyon kell pipilni"], #szöveg
             [t.text["óráról majd kikéretőzök"], t.text["menjek el WC-re"]], #választái lehetőségek
-            [16,17] # hova ugorjon
-        ]
+            [15,15] # hova ugorjon
+        ],
                 [
             15,#szál ID
-            t.text["Pipiltem \nÓ kicsit mellément. Hoppá! ÁÁÁÁÁÁ! \nElestél és beverted a fejedet.], #szöveg
-            [t.text["ó"], t.text["menjek el WC-re"]], #választái lehetőségek
+            t.text["Pipiltem \nÓ kicsit mellément. Hoppá! ÁÁÁÁÁÁ! \nElestél és beverted a fejedet...\nEgy földalatti szobában ébredtem fel. Mit tegyek?"], #szöveg
+            [t.text["Nézzek körül"], t.text["Várjak, hátha csak képzelődöm"],], #választái lehetőségek
             [16,17] # hova ugorjon
+        ],
+                            [
+            16,#szál ID
+            t.text["Körülnéztem, csupán egy út vezet kifelé a szobából"], #szöveg
+            [t.text["kimenjek rajta"], t.text["Körülnézzek mégegyszer"],], #választái lehetőségek
+            [18,19] # hova ugorjon
+        ],
+                            [
+            17,#szál ID
+            t.text["Ez nem képzelődés, jobb lenne inkább körülnézni:)"], #szöveg
+            [t.text["Körülnézek"],], #választái lehetőségek
+            [18,19] # hova ugorjon
         ]
+
 
 
 
