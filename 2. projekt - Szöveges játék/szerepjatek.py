@@ -81,7 +81,7 @@ tortenet=[
         ],
         [
             3,#szál ID
-            t.text[f"Kellene valamit enni! Anya csinált valamit? Nézzük meg!"], #szöveg
+            t.text["Kellene valamit enni! Anya csinált valamit? Nézzük meg! \nHamm Hamm! Fincsi!"], #szöveg
             [t.text["fogmosás"], t.text["reggeli"], t.text["öltözés"],t.text["Elindulok a buszmegállóba"]], #választái lehetőségek
             [2,3,4,5] # hova ugorjon
         ],
@@ -166,21 +166,28 @@ tortenet=[
                 [
             15,#szál ID
             t.text["Pipiltem \nÓ kicsit mellément. Hoppá! ÁÁÁÁÁÁ! \nElestél és beverted a fejedet...\nEgy földalatti szobában ébredtem fel. Mit tegyek?"], #szöveg
-            [t.text["Nézzek körül"], t.text["Várjak, hátha csak képzelődöm"],], #választái lehetőségek
+            [t.text["Nézzek körül"], t.text["Várjak, hátha csak képzelődöm"]], #választái lehetőségek
             [16,17] # hova ugorjon
         ],
                             [
             16,#szál ID
             t.text["Körülnéztem, csupán egy út vezet kifelé a szobából"], #szöveg
-            [t.text["kimenjek rajta"], t.text["Körülnézzek mégegyszer"],], #választái lehetőségek
+            [t.text["kimenjek rajta"], t.text["Körülnézzek mégegyszer"]], #választái lehetőségek
             [18,19] # hova ugorjon
         ],
                             [
             17,#szál ID
             t.text["Ez nem képzelődés, jobb lenne inkább körülnézni:)"], #szöveg
             [t.text["Körülnézek"],], #választái lehetőségek
-            [18,19] # hova ugorjon
-        ]
+            [16] # hova ugorjon
+        ],
+                            [
+            18,#szál ID
+            t.text["Kimentem az ajtón, a másik szobában 3 ajtót látok. \nMelyiken menjek be?"], #szöveg
+            [t.text["Jobb oldali kopott ajtó"],t.text["Középső fehér ajtó"],t.text["ajtó"]], #választái lehetőségek
+            [20,21,22] # hova ugorjon
+            ]
+
 
 
 
@@ -203,7 +210,8 @@ while True:
 
     if tortenet[szalIndex][2]==[]:
         break
-
+#    if szalId==100:
+#        kartya.append("szuperkártya")
     menuPont = menu(tortenet[szalIndex][2])
 
     if menuPont == 98:
