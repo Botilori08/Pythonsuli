@@ -3,7 +3,7 @@ text={"Reggel felébredtem. Mit tegyek?":"Reggel felébredtem. Mit tegyek?",
           "reggeli":"reggeli",
       "Elmegyek fogat mosni. Sikálom rendesen, ahogy kell!":"Elmegyek fogat mosni. Sikálom rendesen, ahogy kell!",
           "öltözés":"öltözés",
-      "Kellene valamit enni! Anya csinált valamit? Nézzük meg!":"Kellene valamit enni! Anya csinált valamit? Nézzük meg!",
+      "Kellene valamit enni! Anya csinált valamit? Nézzük meg! \nHamm Hamm! Fincsi!":"Kellene valamit enni! Anya csinált valamit? Nézzük meg! \nHamm Hamm! Fincsi!",
       "Kissé hűvös van, kellene valami ruha. \nFelveszek egy nadrágot, meg egy pólót!":"Kissé hűvös van, kellene valami ruha. \nFelveszek egy nadrágot, meg egy pólót!",
       "Véde mindennek....":"Véde mindennek....",
       "66-os parancs":"66-os parancs",
@@ -48,12 +48,24 @@ text={"Reggel felébredtem. Mit tegyek?":"Reggel felébredtem. Mit tegyek?",
       "Körülnézzek mégegyszer":"Körülnézzek mégegyszer",
       "Ez nem képzelődés, jobb lenne inkább körülnézni:)":"Ez nem képzelődés, jobb lenne inkább körülnézni:)",
       "Körülnézek":"Körülnézek",
-      
-      
-
+      "Jobb oldali kopott ajtó":"Jobb oldali kopott ajtó",
+      "Középső fehér ajtó":"Középső fehér ajtó",
+      "Bal oldali kopott ajtó":"Bal oldali kopott ajtó",
+      "Kimentem az ajtón, a másik szobában 3 ajtót látok. \nMelyiken menjek be?":"Kimentem az ajtón, a másik szobában 3 ajtót látok. \nMelyiken menjek be?",
+      "Körülnéztél mégyegyszer, és találtál egy titkos ajtót":"Körülnéztél mégyegyszer, és találtál egy titkos ajtót",
+      "Bemegyek rajta":"Bemegyek rajta",
+      "Inkább a korábban felfedezett kijáratot választom":"Inkább a korábban felfedezett kijáratot választom",
+      "Bementél a jobb oldali ajtón. \nBent eldobált fegyverek és egy 200 centis páncélos harcos áll veled szemben, aki feléd közelít.":"Bementél a jobb oldali ajtón. \nBent eldobált fegyverek és egy 200 centis páncélos harcos áll veled szemben, aki feléd közelít.",
+      "Felkapsz egyet a régi fegyverek közül és nekirontasz":"Felkapsz egyet a régi fegyverek közül és nekirontasz",
+      "Kifutsz a szobából, hátha nem követ":"Kifutsz a szobából, hátha nem követ",
+      "Mivel más kijáratot nem látsz kimész":"Mivel más kijáratot nem látsz kimész",
+      "Könnyítesz magadon mert ismét kell":"Könnyítesz magadon mert ismét kell",
+      "Mivel más kijáratot nem látsz kimész vissza":"Mivel más kijáratot nem látsz kimész vissza",
+      "Bementél a bal oldali ajtón. \n Egy sárkány rohan feléd":"Bementél a bal oldali ajtón. \n Egy sárkány rohan feléd",
+      "Megpróbálsz elfutni":"Megpróbálsz elfutni",
+      "Felkapsz egy lándzsát ami a padlón hever és rátámadsz":"Felkapsz egy lándzsát ami a padlón hever és rátámadsz",
       
       
       
  
    }
-
