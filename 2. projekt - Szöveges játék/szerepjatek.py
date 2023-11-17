@@ -149,7 +149,7 @@ tortenet=[
             12,#szál ID
             t.text["megvártam a barátaimat és együtt mentünk iskolába. "], #szöveg
             [t.text["a suliba beérve menjünk együtt a teremhez"], t.text["Suliba beérve menjünk a többiekhez"]], #választái lehetőségek
-            [14,15] # hova ugorjon
+            [14,14] # hova ugorjon
         ],
                 [
             13,#szál ID
