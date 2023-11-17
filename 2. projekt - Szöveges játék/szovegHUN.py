@@ -50,6 +50,7 @@ text={"Reggel felébredtem. Mit tegyek?":"Reggel felébredtem. Mit tegyek?",
       "Körülnézek":"Körülnézek",
       "Jobb oldali kopott ajtó":"Jobb oldali kopott ajtó",
       "Középső fehér ajtó":"Középső fehér ajtó",
+<<<<<<< HEAD
       "Bal oldali kopott ajtó":"Bal oldali kopott ajtó",
       "Kimentem az ajtón, a másik szobában 3 ajtót látok. \nMelyiken menjek be?":"Kimentem az ajtón, a másik szobában 3 ajtót látok. \nMelyiken menjek be?",
       "Körülnéztél mégyegyszer, és találtál egy titkos ajtót":"Körülnéztél mégyegyszer, és találtál egy titkos ajtót",
@@ -64,6 +65,13 @@ text={"Reggel felébredtem. Mit tegyek?":"Reggel felébredtem. Mit tegyek?",
       "Bementél a bal oldali ajtón. \n Egy sárkány rohan feléd":"Bementél a bal oldali ajtón. \n Egy sárkány rohan feléd",
       "Megpróbálsz elfutni":"Megpróbálsz elfutni",
       "Felkapsz egy lándzsát ami a padlón hever és rátámadsz":"Felkapsz egy lándzsát ami a padlón hever és rátámadsz",
+=======
+      "ajtó":"ajtó",
+      "Kimentem az ajtón, a másik szobában 3 ajtót látok. \nMelyiken menjek be?":"Kimentem az ajtón, a másik szobában 3 ajtót látok. \nMelyiken menjek be?",
+      
+      
+
+>>>>>>> d02717cb71ee47887700c98d29009d3ba40f48a3
       
       
       

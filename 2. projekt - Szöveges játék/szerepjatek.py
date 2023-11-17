@@ -184,6 +184,7 @@ tortenet=[
                             [
             18,#szál ID
             t.text["Kimentem az ajtón, a másik szobában 3 ajtót látok. \nMelyiken menjek be?"], #szöveg
+<<<<<<< HEAD
             [t.text["Jobb oldali kopott ajtó"],t.text["Középső fehér ajtó"],t.text["Bal oldali kopott ajtó"]], #választái lehetőségek
             [20,21,22] # hova ugorjon
         ],
@@ -223,6 +224,13 @@ tortenet=[
             [t.text[],t.text[]], #választái lehetőségek
             [] # hova ugorjon
         ],
+=======
+            [t.text["Jobb oldali kopott ajtó"],t.text["Középső fehér ajtó"],t.text["ajtó"]], #választái lehetőségek
+            [20,21,22] # hova ugorjon
+            ]
+
+
+>>>>>>> d02717cb71ee47887700c98d29009d3ba40f48a3
 
 
 
