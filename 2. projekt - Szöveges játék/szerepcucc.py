@@ -214,7 +214,7 @@ tortenet=[
             22,#szál ID
             t.text["Bementél a bal oldali ajtón. \n Egy sárkány rohan feléd"], #szöveg
             [t.text["Megpróbálsz elfutni"],t.text["Felkapsz egy lándzsát ami a padlón hever és rátámadsz"]], #választái lehetőségek
-            [27,28] # hova ugorjon
+            [465,465] # hova ugorjon
         ],
                    [
             23,#szál ID
@@ -222,24 +222,44 @@ tortenet=[
             [t.text["Csatlakozol te is a terv megbeszéléséhez"],t.text["Kimaradsz a megbeszélésből"]], #választái lehetőségek
             [50,99] # hova ugorjon
         ],
+     [
+            50,#szál ID
+            t.text["Megbeszéltétek, hogy felmásztok a szakadékba...\n hát nem leestél? (de) \n legalább szépet estél...\nThe End"], #szöveg
+            [t.text["Csatlakozol te is a terv megbeszéléséhez"],t.text["Kimaradsz a megbeszélésből"]], #választái lehetőségek
+            [50,99] # hova ugorjon
+        ],
         [
             99,#szál ID
-            t.text["Mivel kimaradtál, nem bírták a képed...\n péppé lettél verve...(R.I.P.)"], #szöveg
+            t.text["Mivel kimaradtál, nem bírták a képed...\n péppé lettél verve...(R.I.P.)\nThe End"], #szöveg
             [], #választái lehetőségek
             [] # hova ugorjon
         ],
                            [
             24,#szál ID
-            t.text["A lovag kiüti a kezedből a kardot és földhözvág. Ez bukta!!"], #szöveg
+            t.text["A lovag kiüti a kezedből a kardot és földhözvág. Ez bukta!!\nThe End"], #szöveg
             [], #választái lehetőségek
             [] # hova ugorjon
         ],
                                    [
             25,#szál ID
-            t.text["Kifutsz és eltorlaszolod az ajtót a folyosón lévő szekrénnyel."], #szöveg
+            t.text["Kifutsz és eltorlaszolod az ajtót a folyosón lévő szekrénnyel. \nMelyik másik ajtót válasszam?"], #szöveg
+            [t.text[Középső fehér ajtó],t.text[Bal oldali kopott ajtó]], #választái lehetőségek
+            [21,22] # hova ugorjon
+        ],
+                                   [
+            26,#szál ID
+            t.text["Végre újra pipiltem.\n ÁÁÁÁÁÁÁÁ! \nMár megint elestél és beverted a fejed...\n felébredtél a suli WC-ben\nThe End"], #szöveg
             [], #választái lehetőségek
             [] # hova ugorjon
         ],
+                                       [
+            465,#szál ID
+            t.text["A sárkány tüzet okád rád, majd az égő fájdalom közben rángatózva felébredsz a suli WC-ben :)\nThe End"], #szöveg
+            [], #választái lehetőségek
+            [] # hova ugorjon
+        ],
+
+
 
     ]
 
@@ -265,6 +285,16 @@ while True:
 
     if menuPont == 98:
         break
+     if menuPont == 464:
+        break
+     if menuPont == 23:
+        break
+     if menuPont == 25:
+        break
+     if menuPont == 49:
+        break
+
+   
 
     szalId=tortenet[szalIndex][3][menuPont]
 
