@@ -285,13 +285,13 @@ while True:
 
     if menuPont == 98:
         break
-     if menuPont == 464:
+    if menuPont == 464:
         break
-     if menuPont == 23:
+    if menuPont == 23:
         break
-     if menuPont == 25:
+    if menuPont == 25:
         break
-     if menuPont == 49:
+    if menuPont == 49:
         break
 
    
