@@ -14,6 +14,7 @@ text={"Reggel felébredtem. Mit tegyek?":"Reggel felébredtem. Mit tegyek?",
       "7:20":"7:20",
       "Elindulok a buszmegállóba":"Elindulok a buszmegállóba",
       "Felszálltam a 6:50-es buszra, nagyon sokan vannak, így álnom kell":"Felszálltam a 6:50-es buszra, nagyon sokan vannak, így álnom kell",
+
       "buszról leszállva várjam meg a barátaimat":"buszról leszállva várjam meg a barátaimat",
       "buszról leszállva menjek a boltba":"buszról leszállva menjek a boltba",
       "buszról leszállva menjek az iskolába":"buszról leszállva menjek az iskolába",
@@ -48,9 +49,9 @@ text={"Reggel felébredtem. Mit tegyek?":"Reggel felébredtem. Mit tegyek?",
       "Körülnézzek mégegyszer":"Körülnézzek mégegyszer",
       "Ez nem képzelődés, jobb lenne inkább körülnézni:)":"Ez nem képzelődés, jobb lenne inkább körülnézni:)",
       "Körülnézek":"Körülnézek",
+
       "Jobb oldali kopott ajtó":"Jobb oldali kopott ajtó",
       "Középső fehér ajtó":"Középső fehér ajtó",
-<<<<<<< HEAD
       "Bal oldali kopott ajtó":"Bal oldali kopott ajtó",
       "Kimentem az ajtón, a másik szobában 3 ajtót látok. \nMelyiken menjek be?":"Kimentem az ajtón, a másik szobában 3 ajtót látok. \nMelyiken menjek be?",
       "Körülnéztél mégyegyszer, és találtál egy titkos ajtót":"Körülnéztél mégyegyszer, és találtál egy titkos ajtót",
@@ -65,15 +66,29 @@ text={"Reggel felébredtem. Mit tegyek?":"Reggel felébredtem. Mit tegyek?",
       "Bementél a bal oldali ajtón. \n Egy sárkány rohan feléd":"Bementél a bal oldali ajtón. \n Egy sárkány rohan feléd",
       "Megpróbálsz elfutni":"Megpróbálsz elfutni",
       "Felkapsz egy lándzsát ami a padlón hever és rátámadsz":"Felkapsz egy lándzsát ami a padlón hever és rátámadsz",
-=======
       "ajtó":"ajtó",
+      "Bementél a középső ajtón. Egy WC-ben találod magad":"Bementél a középső ajtón. Egy WC-ben találod magad",
+      "Bementél a középső ajtón. Egy WC-ben találod magad":"Bementél a középső ajtón. Egy WC-ben találod magad",
+      "Könnyítesz magadon mert ismét kell":"Könnyítesz magadon mert ismét kell",
+      "Mivel más kijáratot nem látsz kimész vissza":"Mivel más kijáratot nem látsz kimész vissza",
+      "Felkapsz egy lándzsát ami a padlón hever és rátámadsz":"Felkapsz egy lándzsát ami a padlón hever és rátámadsz",
+      "Kimaradsz a megbeszélésből":"Kimaradsz a megbeszélésből",
+      "Megpróbálsz elfutni":"Megpróbálsz elfutni",
+      "Csatlakozol te is a terv megbeszéléséhez":"Csatlakozol te is a terv megbeszéléséhez",
+      "Benyitsz a titkos ajtón, ami egy mély aknába nyílik.\n Leesel a mélybe, ahol más hozzád hasonló pisiben elcsúszó kölök tervezi a szabadulást.":"Benyitsz a titkos ajtón, ami egy mély aknába nyílik.\n Leesel a mélybe, ahol más hozzád hasonló pisiben elcsúszó kölök tervezi a szabadulást.",
+      "Mivel kimaradtál, nem bírták a képed...\n péppé lettél verve...(R.I.P.)":"Mivel kimaradtál, nem bírták a képed...\n péppé lettél verve...(R.I.P.)",
+      "":"",
+      "A lovag kiüti a kezedből a kardot és földhözvág. Ez bukta!!":"A lovag kiüti a kezedből a kardot és földhözvág. Ez bukta!!",
+    
       "Kimentem az ajtón, a másik szobában 3 ajtót látok. \nMelyiken menjek be?":"Kimentem az ajtón, a másik szobában 3 ajtót látok. \nMelyiken menjek be?",
+      "Elmentem pipilni...\nPipiltem \nÓ kicsit mellément. Hoppá! ÁÁÁÁÁÁ! \nElestél a saját pipidben és beverted a fejedet...\nEgy földalatti szobában ébredtem fel. Mit tegyek?":"Elmentem pipilni...\nPipiltem \nÓ kicsit mellément. Hoppá! ÁÁÁÁÁÁ! \nElestél a saját pipidben és beverted a fejedet...\nEgy földalatti szobában ébredtem fel. Mit tegyek?",
+      
       
       
 
->>>>>>> d02717cb71ee47887700c98d29009d3ba40f48a3
       
       
       
  
    }
+
