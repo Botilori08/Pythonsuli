@@ -243,7 +243,7 @@ tortenet=[
                                    [
             25,#szál ID
             t.text["Kifutsz és eltorlaszolod az ajtót a folyosón lévő szekrénnyel. \nMelyik másik ajtót válasszam?"], #szöveg
-            [t.text[Középső fehér ajtó],t.text[Bal oldali kopott ajtó]], #választái lehetőségek
+            [t.text["Középső fehér ajtó"],t.text["Bal oldali kopott ajtó"]], #választái lehetőségek
             [21,22] # hova ugorjon
         ],
                                    [
