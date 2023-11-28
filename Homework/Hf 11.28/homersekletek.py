@@ -1,11 +1,31 @@
 import random
 import math 
-def homersekletek(lista):
+def homersekletek(cname):
     for i in range(24):
-        random.randint(20,40)
+        i = random.randint(20,37)
         lista.append(i)
-    print("A hőmérséklet ma óránként: ",lista)
-    
-Debrecen_hofok=[]
+    print(cname + " hőmérséklet ma óránként: ",lista)
+
+
+
 lista=[]
-homersekletek(lista)
+Debrecen=[]
+homersekletek("debreceni")
+
+lista=[]
+Sopron=[]
+homersekletek("soproni")
+
+lista=[]
+Budapest=[]
+homersekletek("budapesti")
+
+lista=[]
+Szeged=[]
+homersekletek("soproni")
+
+lista=[]
+Kaposvár=[]
+homersekletek("kaposvári")
+
+
