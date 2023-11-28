@@ -13,7 +13,6 @@ for i,elem in enumerate(varosok):
     print("\t"+str(i+1)+":",elem,sep="")
     
 varosId = "alma"
-
 while varosId == "alma" or varosId not in range(len(varosok)+1):
     try:
         varosId = int(input("Válaszd ki a kívánt várost! "))
