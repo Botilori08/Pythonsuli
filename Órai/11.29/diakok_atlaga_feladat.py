@@ -9,7 +9,9 @@ for i in range(12):
         jegy = random.randrange(1,6)
         egyDiak.append(jegy)
     jegyek_szama.append(egyDiak)
-
+    print(egyDiak)
+    atlag = sum(egyDiak)/jegy
+    print(atlag)
     
 
 
