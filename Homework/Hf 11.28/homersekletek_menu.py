@@ -11,7 +11,9 @@ varosok=["Debrecen","Sopron","Budapest","Szeged","Kaposvár","Kilépés"]
 
 for i,elem in enumerate(varosok):
     print("\t"+str(i+1)+":",elem,sep="")
-    
+
+
+
 varosId = "alma"
 while varosId == "alma" or varosId not in range(len(varosok)+1):
     try:
@@ -50,7 +52,7 @@ while varosId==3:
         if varosId in range(len(varosok)+1):
             break
     except:
-        pass
+        print("Válassz a listából!")
 
 
 while varosId==4:
@@ -61,7 +63,7 @@ while varosId==4:
         if varosId in range(len(varosok)+1):
             break
     except:
-        pass
+        print("Válassz a listából!")
 
 while varosId==5:
     try:
@@ -71,7 +73,7 @@ while varosId==5:
         if varosId in range(len(varosok)+1):
             break 
     except:
-        pass
+        print("Válassz a listából!")
 
 if varosId==6:
     quit()
