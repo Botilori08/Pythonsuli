@@ -2,14 +2,17 @@ import random
 import math
 
 
-randomszam= math.floor(random.random()*1)*500+1000
+randomszam= []
+for i in range(500):
+    i = random.randrange(1000,100001)
+    randomszam.append(i)
 
+#print(randomszam)
+szoveg= str(randomszam)
+print(szoveg)
 
-
-print(randomszam)
 
 f = open("Random.txt","a")
-f.write(randomszam)
+f.write(szoveg)
 f.close()
-f = open("Random.txt", "r")
-print(f.read())
+
