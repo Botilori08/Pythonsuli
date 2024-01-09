@@ -39,13 +39,17 @@ fenyo1=[200,0,0,400,190,400,190,500,210,500,210,400,400,400,200,0]
 pontok=eltol(fenyo1,10,10)
 canvas.create_line(fenyo1,width=5, fill="green")
 
-
-
-
-
-
-
-
+fenyo2=[200,0,
+        0,100,
+        150,100,0,
+        200,150,
+        200,0,
+        300,150,
+        300,150,
+        400,250,
+        400,250,
+        300,400,300,250,200,400,200,250,100,400,100,200,0]
+canvas.create_line(fenyo2,width=5, fill="darkgreen")
 
 
 win.mainloop()
