@@ -9,7 +9,7 @@ def eltol(pontok,x,y):
         pontok[i]+=x
         pontok[i+1]+=y
     return pontok
-
+#nagyitas
 def nagyit(pontok,x,y=-1):
 
 	if y==-1:
@@ -23,7 +23,29 @@ def nagyit(pontok,x,y=-1):
 			else:
 				pontok[i]*=y
 	
-	return pontok	
+	return pontok
+	
+#forgatas fuggveny
+#x'= cos αx − sin αy
+#y' = sin αx + cos αy
+def forgatPont(x,y,szog):
+    x2=math.cos(math.radians(szog))*x - math.sin(math.radians(szog))*y
+    y2=math.sin(math.radians(szog))*x + math.cos(math.radians(szog))*y
+	
+    return x2,y2
+
+def forgat(lista,szog,oX=0,oY=0):
+	
+    lista=eltol(lista,-oX,-oY)
+	
+    for i in range(0,len(lista),2):
+        lista[i],lista[i+1]=forgatPont(lista[i],lista[i+1],szog)
+	
+    lista=eltol(lista,-oX,-oY)
+	
+    return lista
+
+
 def faSorsol(darab):
 	lista=[]
 
@@ -83,8 +105,10 @@ fenyo2=[200,0,
         400,100,
         200,0]
 
+
+fenyo2=nagyit(fenyo2,0.2,0.5)
+fenyo2=forgat(fenyo2,90)
 fenyo2=eltol(fenyo2,200,100)
-fenyo2=nagyit(fenyo2,0.5,1)
 canvas.create_line(fenyo2,width=5, fill="darkgreen")
 
 
