@@ -34,8 +34,14 @@ def forgatPont(x,y,szog):
 	
     return x2,y2
 
-def forgat(lista,szog,oX=0,oY=0):
-	
+def forgat(lista,szog,oX="",oY=""):
+      
+	#kX,kY=kozepSzamol(fenyo2)
+    if oX=="" and oY=="":
+          oX,oY=kozepSzamol(lista)
+    elif oX=="" or oY=="":
+          return lista
+    
     lista=eltol(lista,-oX,-oY)
 	
     for i in range(0,len(lista),2):
@@ -54,9 +60,10 @@ def kozepSzamol(lista):
         else:
             y+=lista[i]
 
-        x=x/(len(lista/2))
-        y=y/(len(lista/2))
-	
+        x=x/ len(lista)/2
+        y=y/ len(lista)*2
+
+    return x,y
 
 def faSorsol(darab):
 	lista=[]
@@ -119,13 +126,13 @@ fenyo2=[200,0,
 
 
 fenyo2=nagyit(fenyo2,0.2,0.5)
-fenyo2=forgat(fenyo2,90)
+fenyo2=forgat(fenyo2,45)
 fenyo2=eltol(fenyo2,200,100)
 canvas.create_line(fenyo2,width=5, fill="darkgreen")
 
-kX,kY=kozepSzamol(fenyo2)
+#kX,kY=kozepSzamol(fenyo2)
 
-fenyo2=forgat(fenyo2,45,kX,kY)
+fenyo2=forgat(fenyo2,20)
 canvas.create_line(fenyo2,width=2, fill="blue")
 
 win.mainloop()

@@ -7,9 +7,8 @@ while szamok == [] or bekert > 0 :
 
 print(szamok)
 
-for i in szamok:
-    i = int(i)
+ujszamok = str(szamok)
 
 f = open("szamok.txt","w")
-f.write(i)
+f.write(ujszamok)
 f.close()
