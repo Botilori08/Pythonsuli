@@ -46,16 +46,16 @@ def forgat(lista,szog,oX=0,oY=0):
     return lista
 
 def kozepSzamol(lista):
-	x=0
-	y=0
-	for i in range(len(lista)):
-		if i%2==0:
+    x=0
+    y=0
+    for i in range(len(lista)):
+        if i%2==0:
             x+=lista[i]
-	    else:
-	        y+=lista[i]
+        else:
+            y+=lista[i]
 
-    x=x/(len(lista/2))
-	y=y/(len(lista/2))
+        x=x/(len(lista/2))
+        y=y/(len(lista/2))
 	
 
 def faSorsol(darab):
@@ -123,7 +123,10 @@ fenyo2=forgat(fenyo2,90)
 fenyo2=eltol(fenyo2,200,100)
 canvas.create_line(fenyo2,width=5, fill="darkgreen")
 
+kX,kY=kozepSzamol(fenyo2)
 
+fenyo2=forgat(fenyo2,45,kX,kY)
+canvas.create_line(fenyo2,width=2, fill="blue")
 
 win.mainloop()
 
