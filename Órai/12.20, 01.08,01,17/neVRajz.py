@@ -79,20 +79,22 @@ nevRbelso = [570,140,
 
 Lori2 = []
 for e in nevO:
-    e = transzformaciok.eltol(e,0,0)
+    e = transzformaciok.eltolas(e,0,0)
     e = transzformaciok.nagyit(e,1)
-    #e= transzformaciok.forgat(e,0)
+    e= transzformaciok.forgat(e,0)
 
 
 
     Lori2.append(e)
-
+#Lori2 = transzformaciok.eltolas(e,0,0)
+#Lori2 = transzformaciok.nagyit(Lori2,1)
 #Lori2= transzformaciok.forgat(Lori2,-45)
 #print(Lori2)
     
 
 for e in Lori2:
     canvas.create_line(e,width=5,fill="blue")   
+
 canvas.create_line(nevL,width=5, fill="blue")
 canvas.create_line(nevR,width=5, fill="blue")
 canvas.create_line(nevRbelso,width=5, fill="blue")
