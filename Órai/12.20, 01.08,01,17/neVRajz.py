@@ -5,7 +5,7 @@ from tkinter import *
 win=Tk()
 
 #Set the size of the tkinter window
-win.geometry("600x600")
+win.geometry("1200x600")
 
 #Create a canvas widget 
 canvas = Canvas(win, width=600, height=600)
@@ -78,22 +78,23 @@ nevRbelso = [570,140,
             ]
 
 Lori2 = []
-for e in nevO:
-    e = transzformaciok.eltolas(e,0,0)
-    e = transzformaciok.nagyit(e,1)
-    e= transzformaciok.forgat(e,0)
+#for e in nevO:
+#    e = transzformaciok.eltol(e,0,0)
+#    e = transzformaciok.nagyit(e,1)
+#    e= transzformaciok.forgat(e,45)
 
 
+#    Lori2.append(e)
 
-    Lori2.append(e)
-#Lori2 = transzformaciok.eltolas(e,0,0)
-#Lori2 = transzformaciok.nagyit(Lori2,1)
-#Lori2= transzformaciok.forgat(Lori2,-45)
 #print(Lori2)
     
 
 for e in Lori2:
-    canvas.create_line(e,width=5,fill="blue")   
+    canvas.create_line(e,width=5,fill="blue")
+
+Lori2 = transzformaciok.eltol(Lori2,100,100)
+Lori2 = transzformaciok.nagyit(Lori2,1)
+Lori2= transzformaciok.forgat(Lori2,45)   
 
 canvas.create_line(nevL,width=5, fill="blue")
 canvas.create_line(nevR,width=5, fill="blue")
