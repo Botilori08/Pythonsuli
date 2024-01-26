@@ -41,26 +41,32 @@ nevL = [140,0,
         170,0,
         140,0]
 
-nevO = [[400,300,
+nevOekezet = [400,70,
+              420,30,
+              440,30,
+              420,70,
+              400,70]
+
+              
+
+nevOBelso = [400,270,
+            470,200,
+            400,130,
+            330,200,
+            400,270]
+
+nevO = [400,300,
         500,200,
         400,100,
         300,200,
         400,300,
-],
-[400,270,
+]
+nevOBelso = [400,270,
             470,200,
             400,130,
             330,200,
             400,270],
-[400,70,
-              420,30,
-              440,30,
-              420,70,
-              400,70
-
-              ]
-]
-nevR =[540,100,
+nevR =[[540,100,
          540,300,
          570,300,
          570,230,
@@ -69,15 +75,19 @@ nevR =[540,100,
          600,230,
          640,230,
          640,100,
-         540,100]
-nevRbelso = [570,140,
+         540,100],
+[570,140,
             610,140,
             610,200,
             570,200,
             570,140
             ]
+]
+hatter= "ffffff"
+betuSzinek = ["blue",hatter,"blue"]
 
-Lori2 = []
+
+Lori2 = [nevR]
 #for e in nevO:
 #    e = transzformaciok.eltol(e,0,0)
 #    e = transzformaciok.nagyit(e,1)
@@ -85,21 +95,31 @@ Lori2 = []
 
 
 #    Lori2.append(e)
-
 #print(Lori2)
-    
+#for e in Lori2:
+#    canvas.create_line(e,width=5,fill="blue")
 
-for e in Lori2:
-    canvas.create_line(e,width=5,fill="blue")
+Lori2 = transzformaciok.masol(nevR)
 
-Lori2 = transzformaciok.eltol(Lori2,100,100)
-Lori2 = transzformaciok.nagyit(Lori2,1)
-Lori2= transzformaciok.forgat(Lori2,45)   
+Lori2 = transzformaciok.forgat(Lori2,90)
+Lori2 = transzformaciok.nagyit(Lori2,1)   
+Lori2 = transzformaciok.eltol(Lori2,0,0)
 
+#for e in Lori2: 
+#    canvas.create_line(e,width=5,fill="red")
+
+
+canvas.create_line(nevO,width=5, fill="blue")
 canvas.create_line(nevL,width=5, fill="blue")
 canvas.create_line(nevR,width=5, fill="blue")
-canvas.create_line(nevRbelso,width=5, fill="blue")
-#canvas.create_line(nevOBelso,width=10, fill="blue")
-#canvas.create_line(nevOekezet,width=10, fill="blue")
+#canvas.create_line(nevRbelso,width=5, fill="blue")
+canvas.create_line(nevOBelso,width=5, fill="blue")
+canvas.create_line(nevOekezet,width=5, fill="blue")
 
-win.mainloop()
+while True:
+    canvas.delete("all")
+    Lori2 = transzformaciok.forgat(Lori2,0.1)
+    for e enumerate (Lori2):
+        d = canvas.create_polygon(Lori2,fill= 'blue', outline="blue")
+    win.update_idletasks()
+    win.update()
