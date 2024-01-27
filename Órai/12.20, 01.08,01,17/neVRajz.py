@@ -47,13 +47,6 @@ nevOekezet = [400,70,
               420,70,
               400,70]
 
-              
-
-nevOBelso = [400,270,
-            470,200,
-            400,130,
-            330,200,
-            400,270]
 
 nevO = [400,300,
         500,200,
@@ -65,7 +58,7 @@ nevOBelso = [400,270,
             470,200,
             400,130,
             330,200,
-            400,270],
+            400,270]
 nevR =[[540,100,
          540,300,
          570,300,
@@ -83,6 +76,25 @@ nevR =[[540,100,
             570,140
             ]
 ]
+nevA = [670,300,
+        720,100,
+        780,100,
+        830,300,
+        800,300,
+        750,250,
+        700,300,
+        670,300
+        ]
+nevAbelso = [740,130,
+             720,220,
+             780,220,
+             760,130,
+             740,130]
+nevAekezet = [740,70,
+              750,30,
+              770,30,
+              760,70,
+              740,70]
 hatter= "ffffff"
 betuSzinek = ["blue",hatter,"blue"]
 
@@ -92,7 +104,6 @@ Lori2 = [nevR]
 #    e = transzformaciok.eltol(e,0,0)
 #    e = transzformaciok.nagyit(e,1)
 #    e= transzformaciok.forgat(e,45)
-
 
 #    Lori2.append(e)
 #print(Lori2)
@@ -115,11 +126,18 @@ canvas.create_line(nevR,width=5, fill="blue")
 #canvas.create_line(nevRbelso,width=5, fill="blue")
 canvas.create_line(nevOBelso,width=5, fill="blue")
 canvas.create_line(nevOekezet,width=5, fill="blue")
+canvas.create_line(nevA,width=5, fill="blue")
+canvas.create_line(nevAbelso,width=5, fill="blue")
+canvas.create_line(nevAekezet,width=5, fill="blue")
 
-while True:
-    canvas.delete("all")
-    Lori2 = transzformaciok.forgat(Lori2,0.1)
-    for e enumerate (Lori2):
-        d = canvas.create_polygon(Lori2,fill= 'blue', outline="blue")
-    win.update_idletasks()
-    win.update()
+
+win.mainloop()
+
+#while True:
+#        canvas.delete("all")
+#        Lori2 = transzformaciok.forgat(Lori2,0.1)
+#        for e enumerate(Lori2):
+#                d = canvas.create_polygon(Lori2,fill= 'blue', outline="blue")
+#        
+#        win.update_idletasks()
+#        win.update()
