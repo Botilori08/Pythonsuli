@@ -59,7 +59,7 @@ nevOBelso = [400,270,
             400,130,
             330,200,
             400,270]
-nevR =[[520,100,
+nevR =[520,100,
          520,300,
          550,300,
          550,230,
@@ -68,24 +68,26 @@ nevR =[[520,100,
          580,230,
          620,230,
          620,100,
-         520,100],
-[550,140,
+         520,100]
+nevRbelso = [550,140,
             590,140,
             590,200,
             550,200,
             550,140
             ]
-]
+
 
 nevA = [660,300,
         710,100,
         770,100,
         820,300,
         790,300,
-        730,250,
+        770,250,
+        710,250,
         690,300,
         660,300
         ]
+
 nevAbelso = [730,130,
              710,220,
              770,220,
@@ -147,7 +149,7 @@ Lori2 = transzformaciok.eltol(Lori2,0,0)
 canvas.create_line(nevO,width=5, fill="blue")
 canvas.create_line(nevL,width=5, fill="blue")
 canvas.create_line(nevR,width=5, fill="blue")
-#canvas.create_line(nevRbelso,width=5, fill="blue")
+canvas.create_line(nevRbelso,width=5, fill="blue")
 canvas.create_line(nevOBelso,width=5, fill="blue")
 canvas.create_line(nevOekezet,width=5, fill="blue")
 canvas.create_line(nevA,width=5, fill="blue")
