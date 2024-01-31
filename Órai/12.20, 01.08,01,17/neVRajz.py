@@ -33,9 +33,9 @@ canvas.pack(fill=BOTH, expand=1) #teljes ablakot kitölti
 #fenyo2masolat = transzformaciok.eltol(fenyo2,100,100)
 #canvas.create_line(fenyo2masolat,width=30, fill="darkgreen")
 Lorant =[ [140,0,100,300,300,300,300,270,130,270,170,0,140,0], #L
-                [400,300,500,200,400,100,300,200,400,300,], #O Külsö
-                [400,70,420,30,440,30,420,70,400,70], #O belső
                 [400,270,470,200,400,130,330,200,400,270],#O ekezet
+                [400,70,420,30,440,30,420,70,400,70], #O belső
+                [400,300,500,200,400,100,300,200,400,300,], #O Külsö
                 [520,100,520,300,550,300,550,230,590,300,620,300,580,230,620,230,620,100,520,100],#R külső
                 [550,140,590,140,590,200,550,200,550,140],#R belső
                 [660,300,710,100,770,100,820,300,790,300,770,250,710,250,690,300,660,300],#A külső
@@ -65,12 +65,12 @@ Lori2 = [Lorant]
 
 #Lori2 = transzformaciok.masol(Lorant)
 
-Lori2 = transzformaciok.forgat(Lori2,90)
-Lori2 = transzformaciok.nagyit(Lori2,1)   
-Lori2 = transzformaciok.eltol(Lori2,0,0)
+#Lori2 = transzformaciok.forgat(Lori2,90)
+#Lori2 = transzformaciok.nagyit(Lori2,1)   
+#Lori2 = transzformaciok.eltol(Lori2,0,0)
 
-for e in Lori2: 
-    canvas.create_line(e,width=5,fill="red")
+#for e in Lori2: 
+#    canvas.create_line(e,width=5,fill="red")
 
 
 #canvas.create_line(nevO,width=5, fill="blue")
@@ -92,7 +92,7 @@ while True:
         canvas.delete("all")
         Lori2 = transzformaciok.forgat(Lori2,0.1)
         for i,e in enumerate(Lori2):
-                d = canvas.create_polygon(Lori2,fill='blue', outline="white")
+                d = canvas.create_line(Lori2,fill='blue', width="5")
         
         win.update_idletasks()
         win.update()
