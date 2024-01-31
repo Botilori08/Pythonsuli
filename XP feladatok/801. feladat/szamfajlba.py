@@ -9,6 +9,6 @@ print(szamok)
 
 ujszamok = str(szamok)
 
-f = open("szamok.txt","w")
+f = open("adat.txt","w")
 f.write(ujszamok)
 f.close()
