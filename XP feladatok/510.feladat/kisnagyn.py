@@ -1,11 +1,15 @@
-szamok = []
-while szamok == [] or bekert > 0 : 
+szamlista = []
+while szamlista == [] or bekert > 0 : 
     bekert= int(input("Írj be egy számot! "))
-    szamok.append(bekert)
+    szamlista.append(bekert)
     if bekert ==0:
         break
 
-novekvolista = szamok.sort()
-
-
-print(novekvolista[0],novekvolista[-1:])
+szamok = []
+for e in szamlista:
+    szamok.append(e)
+szamok.sort()
+legkisebb = szamok[0]
+legnagyobb = szamok[-1]
+print("A legkisebb szám:",szamok[0])
+print("A legnagyobb szám:",szamok[-1])
