@@ -14,7 +14,7 @@ def randomcolor():
     return ("#"+hex(r)[-2:]+hex(g)[-2:]+hex(b)[-2:]).replace("x","0")
 
 jatekHatter = "lightgray"
-jatekSpeed = 100
+jatekSpeed = 10
 
 def atmenetColor(red,green,blue):
     red+=5
@@ -61,7 +61,7 @@ canvas.pack(fill=BOTH, expand= 1)
 
 labda = canvas.create_oval(0,0,100,100,fill="red")
 
-labdaSpeed = [5,5.25]
+labdaSpeed = [5,2]
 labdaPos = [200,200]
 labdaSize = 50
 labdaColor = "red"
