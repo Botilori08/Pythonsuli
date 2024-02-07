@@ -1,6 +1,5 @@
-#egyszerű pong játék
-#Start: 2024.01.31
-#End: 
+#egyszerű kígyós játék
+#Start: 2024.01.31.
 #Boti Lóránt
 #tanár: Papp Péter
 
@@ -22,7 +21,7 @@ def rajzol ():
         labdaColor = randomcolor()
 
     labdaLista.append(canvas.create_oval(labdaPos[0],labdaPos[1],labdaPos[0]+labdaSize,labdaPos[1]+labdaSize, fill= "green", outline = ""))
-
+    kajaCheck()
     if len(labdaLista) > labdaListaHossz:
         canvas.delete(labdaLista[0])
         labdaLista.pop(0)
@@ -37,6 +36,23 @@ def kaja ():
     kajak.append(canvas.create_oval(x,y,x+kajaSize,y+kajaSize, fill= "red", outline = ""))
 
     win.after(kajaSpeed,kaja)
+
+
+def kajaCheck():
+    f = canvas.bbox(labdaLista[-1])
+    fKozep = [(f[0]+f[2])/2,(f[1]+f[2])/2] # fej közepének kiszámítása
+    for egyKaja in kajak:
+        k = canvas.bbox(egyKaja)
+        kKozep = [(k[0]+k[2])/2,(k[1]+k[2])/2] #kaja közepének kiszámítása
+ 
+        x = fKozep[0]-kKozep[0]
+        y = fKozep[1]-kKozep[1]
+
+        #eléri-e a kaját
+        if x**2 + y**2 <= ((labdaSize + kajaSize)*0.5)**2:
+            print("Hamm!")
+
+
 '''
 ütközés 
 def collisionDetection():
@@ -47,8 +63,6 @@ def collisionDetection():
 
 
 '''
-
-    
 
 def randomcolor():
     r = random.randint(0,255)
@@ -96,14 +110,11 @@ def atmenetColor(red,green,blue):
     
 print(randomcolor())
 
-
 win = Tk()
 win.geometry("600x600+100+20")
 win.title("Pong játék")
 canvas = Canvas(win, bg=jatekHatter)
 canvas.pack(fill=BOTH, expand= 1)
-
-
 
 #labda = canvas.create_oval(0,0,100,100,fill="red")
 
