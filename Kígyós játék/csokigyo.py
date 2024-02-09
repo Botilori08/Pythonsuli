@@ -10,8 +10,8 @@ def rajzol ():
     
     #labdaColor, red, green, blue=atmenetColor(red,green,blue)
     #print(labdaColor)
-    labdaPos[0]+= labdaSpeed[0]*labdaSize
-    labdaPos[1]+= labdaSpeed[1]*labdaSize
+    labdaPos[0]+= labdaSpeed[0]*(labdaSize+2)
+    labdaPos[1]+= labdaSpeed[1]*(labdaSize+2)
 
     if labdaPos[0] > win.winfo_width() or labdaPos[0]<0:
         labdaSpeed[0]*=-1
@@ -22,12 +22,17 @@ def rajzol ():
 
     labdaLista.append(canvas.create_oval(labdaPos[0],labdaPos[1],labdaPos[0]+labdaSize,labdaPos[1]+labdaSize, fill= "green", outline = ""))
     kajaCheck()
+    utkozes()
     if len(labdaLista) > labdaListaHossz:
         canvas.delete(labdaLista[0])
         labdaLista.pop(0)
 
-    win.after(jatekSpeed,rajzol)
 
+    if  not halal:
+        win.after(jatekSpeed,rajzol)
+
+
+halal=False
 kajak= []
 
 def kaja ():
@@ -39,6 +44,8 @@ def kaja ():
 
 
 def kajaCheck():
+    global labdaListaHossz
+
     f = canvas.bbox(labdaLista[-1])
     fKozep = [(f[0]+f[2])/2,(f[1]+f[2])/2] # fej közepének kiszámítása
     for egyKaja in kajak:
@@ -49,8 +56,38 @@ def kajaCheck():
         y = fKozep[1]-kKozep[1]
 
         #eléri-e a kaját
+        #EZEK ÁTMÉRŐK, NEM SUGARAK!!!
+        #Ezért kell a feles szorzó
         if x**2 + y**2 <= ((labdaSize + kajaSize)*0.5)**2:
             print("Hamm!")
+            canvas.delete(egyKaja)
+            kajak.remove(egyKaja)
+            labdaListaHossz += 1
+
+def utkozes():
+    global halal
+    f = canvas.bbox(labdaLista[-1])
+    fKozep = [(f[0]+f[2])/2,(f[1]+f[2])/2] # fej közepének kiszámítása
+    for egyLabda in labdaLista[:-1]:
+        k = canvas.bbox(egyLabda)
+        kKozep = [(k[0]+k[2])/2,(k[1]+k[2])/2] #kaja közepének kiszámítása
+ 
+        x = fKozep[0]-kKozep[0]
+        y = fKozep[1]-kKozep[1]
+
+        #eléri-e a kaját
+        #EZEK ÁTMÉRŐK, NEM SUGARAK!!!
+        #Ezért kell a feles szorzó
+        if x**2 + y**2 <= (labdaSize)**2:
+            print("DIE!")
+            halal=True
+            '''
+            canvas.delete(egyLabda)
+            kajak.remove(egyLabda)
+            labdaListaHossz += 1
+
+            '''
+            
 
 
 '''
