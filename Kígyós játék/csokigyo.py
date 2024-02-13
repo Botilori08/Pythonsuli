@@ -21,11 +21,13 @@ def rajzol ():
         labdaColor = randomcolor()
 
     labdaLista.append(canvas.create_oval(labdaPos[0],labdaPos[1],labdaPos[0]+labdaSize,labdaPos[1]+labdaSize, fill= "green", outline = ""))
-    kajaCheck()
-    utkozes()
+
     if len(labdaLista) > labdaListaHossz:
         canvas.delete(labdaLista[0])
         labdaLista.pop(0)
+
+    utkozes()
+    kajaCheck()
 
 
     if  not halal:
@@ -67,10 +69,10 @@ def kajaCheck():
 def utkozes():
     global halal
     f = canvas.bbox(labdaLista[-1])
-    fKozep = [(f[0]+f[2])/2,(f[1]+f[2])/2] # fej közepének kiszámítása
+    fKozep = [(f[0]+f[2])/2,(f[1]+f[3])/2] # fej közepének kiszámítása
     for egyLabda in labdaLista[:-1]:
         k = canvas.bbox(egyLabda)
-        kKozep = [(k[0]+k[2])/2,(k[1]+k[2])/2] #kaja közepének kiszámítása
+        kKozep = [(k[0]+k[2])/2,(k[1]+k[3])/2] #kaja közepének kiszámítása
  
         x = fKozep[0]-kKozep[0]
         y = fKozep[1]-kKozep[1]
@@ -129,7 +131,7 @@ def gombLe(e):
     #print(e)
 
 jatekSpeed = 500
-kajaSpeed = 5000
+kajaSpeed = 500
 jatekHatter = "lightgray"
 
 def atmenetColor(red,green,blue):
