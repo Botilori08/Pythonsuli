@@ -34,6 +34,7 @@ def rajzol ():
         win.after(jatekSpeed,rajzol)
 
 
+
 halal=False
 kajak= []
 
@@ -44,9 +45,10 @@ def kaja ():
 
     win.after(kajaSpeed,kaja)
 
-
+pontSzoveg = ""
 def kajaCheck():
     global labdaListaHossz
+    global pontSzoveg
 
     f = canvas.bbox(labdaLista[-1])
     fKozep = [(f[0]+f[2])/2,(f[1]+f[2])/2] # fej közepének kiszámítása
@@ -65,6 +67,9 @@ def kajaCheck():
             canvas.delete(egyKaja)
             kajak.remove(egyKaja)
             labdaListaHossz += 1
+            canvas.delete(pontSzoveg)
+            pontSzoveg = canvas.create_text(300, 50, text="Pontszám:"+(str(labdaListaHossz)), fill="black", font=('Helvetica 15 bold'))
+            
 
 def utkozes():
     global halal
@@ -83,6 +88,7 @@ def utkozes():
         if x**2 + y**2 <= (labdaSize)**2:
             print("DIE!")
             halal=True
+            pontSzoveg = canvas.create_text(300, 300, text="GAME OVER!", fill="black", font=('Helvetica 15 bold'))
             '''
             canvas.delete(egyLabda)
             kajak.remove(egyLabda)
@@ -130,7 +136,7 @@ def gombLe(e):
         labdaSpeed[1]=0
     #print(e)
 
-jatekSpeed = 500
+jatekSpeed = 300
 kajaSpeed = 500
 jatekHatter = "lightgray"
 
