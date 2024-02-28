@@ -1,5 +1,7 @@
 #Áramkör projekt
 #2024.02.16.
+#Boti Lóránt
+#Tanár: Papp Péter
 
 import math
 class jel:
@@ -81,6 +83,8 @@ class kapcsolo(jel):
 
 class lampa(jel):
 	def rajz(self):
+		
+		self.r = self.meret*0.2
 		dx = self.r/math.sqrt(2)
 
 		vonalak = [
@@ -98,22 +102,44 @@ class lampa(jel):
 			],
 			[
 				self.x + self.meret * 0.5 + self.r,	self.y + self.meret * 0.5,
-				self.x + self.meret * 1.00 + dx , self.y + self.meret *0.5,
+				self.x + self.meret * 1.00, self.y + self.meret *0.5,
 			],
 
 		]
 		
 		korok= [
 			[
-				self.x+self.meret*0.333-self.r,	self.y+self.meret*0.5-self.r,
-				self.x + self.meret*0.333 + self.r,	self.y+ self.meret*0.5 + self.r
-			],
-			[
-				self.x+self.meret*0.666-self.r,	self.y+self.meret*0.5-self.r,
-				self.x + self.meret*0.666 + self.r,	self.y+ self.meret*0.5 + self.r
+				self.x+self.meret*0.5-self.r,	self.y+self.meret*0.5-self.r,
+				self.x + self.meret*0.5 + self.r,	self.y+ self.meret*0.5 + self.r
 			],
         ]
 		jel.rajz(self,vonalak,korok)
+
+class Ellenállás(jel):
+	def rajz(self):
+
+		vonalak = [
+			[
+				self.x, 	self.y + self.meret * 0.5,
+				self.x + self.meret * 0.25,	 	self.y + self.meret * 0.5,
+			],
+
+			[
+				self.x + self.meret * 0.25,		self.y + self.meret * 0.4,
+				self.x + self.meret * 0.25,	 self.y + self.meret*0.6,
+				self.x + self.meret * 0.75,	 self.y + self.meret*0.6,
+				self.x + self.meret * 0.75,	 self.y + self.meret*0.4,
+				self.x + self.meret * 0.25,		self.y + self.meret * 0.4,
+			],
+			[
+				self.x + self.meret * 0.75,		self.y + self.meret * 0.5,
+				self.x + self.meret * 1.0,	 	self.y + self.meret*0.5,
+			]
+
+		]
+		
+		jel.rajz(self,vonalak)
+
 from tkinter import *
 
 win = Tk()
@@ -133,6 +159,9 @@ elem2 = elem(200,100,50,canvas)
 #elem2.rajz()
 
 kapcsolo1 = kapcsolo(350, 150, 100, canvas)
+
 lampa1 = lampa(0, 150, 100, canvas)
+
+ellenallas1 = Ellenállás(500,150,100, canvas)
 
 win.mainloop()
