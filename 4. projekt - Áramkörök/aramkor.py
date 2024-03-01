@@ -31,12 +31,36 @@ class jel:
 			self.canvas.create_oval(egyKor, outline = self.szin, width= self.meret*0.03)
 
 	def vezetek(self,masik, sajatBKP=1, masikBKP=0):
-		vonalak = [
+
+		if sajatBKP ==1 and masikBKP==0 and self.bkp[sajatBKP][0] < masik.bkp[masikBKP][0]:
+			vonalak = [
+				[
+					self.bkp[sajatBKP][0],self.bkp[sajatBKP][1],
+					(self.bkp[sajatBKP][0] + masik.bkp[masikBKP][0]) /2, self.bkp[sajatBKP][1],
+					(self.bkp[sajatBKP][0] + masik.bkp[masikBKP][0]) /2, masik.bkp[masikBKP][1],
+					masik.bkp[masikBKP][0],masik.bkp[masikBKP][1]
+				],
+			]
+
+		elif sajatBKP ==1 and masikBKP==1 and self.bkp[sajatBKP][0] < masik.bkp[masikBKP][0]:
+			vonalak = [
 			[
 				self.bkp[sajatBKP][0],self.bkp[sajatBKP][1],
-				masik.bkp[masikBKP][0],masik.bkp[masikBKP][1]
+				(self.bkp[sajatBKP][0] + masik.bkp[masikBKP][0]) /2, self.bkp[sajatBKP][1],
+				(self.bkp[sajatBKP][0] + masik.bkp[masikBKP][0]) /2, masik.y+masik.meret*1.2,
+				masik.x + masik.meret*1.2							,masik.y+masik.meret*1.2,
+				masik.x + masik.meret*1.2							,masik.bkp[masikBKP][1],
+				masik.bkp[masikBKP][0],masik.bkp[masikBKP][1],
 			],
 		]
+		else:
+			vonalak = [
+				[
+					self.bkp[sajatBKP][0],self.bkp[sajatBKP][1],
+					masik.bkp[masikBKP][0],masik.bkp[masikBKP][1]
+				],
+			]
+
 		for egyVonal in vonalak:
 			self.canvas.create_line(egyVonal, width = self.meret * 0.03, fill = self.szin)	
 
@@ -171,11 +195,18 @@ elem1 = elem(0,0,100,canvas)
 elem2 = elem(200,100,50,canvas)
 #elem2.rajz()
 
-kapcsolo1 = kapcsolo(350, 150, 100, canvas)
+kapcsolo1 = kapcsolo(350, 200, 100, canvas)
 
-lampa1 = lampa(0, 150, 100, canvas)
+lampa1 = lampa(0, 400, 100, canvas)
 
 ellenallas1 = Ellenállás(500,150,100, canvas)
-lampa1.vezetek(kapcsolo1)
+
+
+
+#lampa1.vezetek(kapcsolo1,sajatBKP=0,masikBKP =0)
+lampa1.vezetek(kapcsolo1,sajatBKP=1,masikBKP =1)
+
+
+
 
 win.mainloop()
