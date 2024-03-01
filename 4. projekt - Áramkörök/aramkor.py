@@ -8,15 +8,16 @@ class jel:
 	x = 0
 	y = 0
 	meret = 100
-	
 	szin = "black"
 
 	def __init__(self, x, y, meret, canvas):
 		self.x = x
 		self.y = y
 		self.meret = meret
-		self.canvas = canvas
 		self.r = self.meret * 0.06
+		#Bekötési pont by Taki
+		self.bkp = [[self.x, self.y+self.meret*0.5],[self.x+self.meret, self.y+self.meret*0.5],]
+		self.canvas = canvas
 		self.rajz()
 
 
@@ -27,7 +28,19 @@ class jel:
 			self.canvas.create_line(egyVonal, width = self.meret * 0.03, fill = self.szin)	
 			
 		for egyKor in korok:
-		    self.canvas.create_oval(egyKor, outline = self.szin, width= self.meret*0.03)
+			self.canvas.create_oval(egyKor, outline = self.szin, width= self.meret*0.03)
+
+	def vezetek(self,masik, sajatBKP=1, masikBKP=0):
+		vonalak = [
+			[
+				self.bkp[sajatBKP][0],self.bkp[sajatBKP][1],
+				masik.bkp[masikBKP][0],masik.bkp[masikBKP][1]
+			],
+		]
+		for egyVonal in vonalak:
+			self.canvas.create_line(egyVonal, width = self.meret * 0.03, fill = self.szin)	
+
+	
 
 class elem(jel):
 	def rajz(self):
@@ -163,5 +176,6 @@ kapcsolo1 = kapcsolo(350, 150, 100, canvas)
 lampa1 = lampa(0, 150, 100, canvas)
 
 ellenallas1 = Ellenállás(500,150,100, canvas)
+lampa1.vezetek(kapcsolo1)
 
 win.mainloop()
