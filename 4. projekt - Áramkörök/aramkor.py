@@ -42,12 +42,23 @@ class jel:
 				],
 			]
 
-		elif sajatBKP ==1 and masikBKP==1 and self.bkp[sajatBKP][0] < masik.bkp[masikBKP][0]:
+		elif (sajatBKP ==1 and masikBKP==1) and self.bkp[sajatBKP][0] < masik.bkp[masikBKP][0]:
 			vonalak = [
 			[
 				self.bkp[sajatBKP][0],self.bkp[sajatBKP][1],
-				(self.bkp[sajatBKP][0] + masik.bkp[masikBKP][0]) /2, self.bkp[sajatBKP][1],
-				(self.bkp[sajatBKP][0] + masik.bkp[masikBKP][0]) /2, masik.y+masik.meret*1.2,
+				(self.bkp[sajatBKP][0] + masik.x) /2, self.bkp[sajatBKP][1],
+				(self.bkp[sajatBKP][0] + masik.x) /2, masik.y+masik.meret*1.2,
+				masik.x + masik.meret*1.2							,masik.y+masik.meret*1.2,
+				masik.x + masik.meret*1.2							,masik.bkp[masikBKP][1],
+				masik.bkp[masikBKP][0],masik.bkp[masikBKP][1],
+			],
+		]
+		elif (sajatBKP ==1 and masikBKP==1) and self.x < masik.x < self.x + self.meret:
+			vonalak = [
+			[
+				self.bkp[sajatBKP][0],self.bkp[sajatBKP][1],
+				(self.bkp[sajatBKP][0] + masik.x) /2, self.bkp[sajatBKP][1],
+				(self.bkp[sajatBKP][0] + masik.x) /2, masik.y+masik.meret*1.2,
 				masik.x + masik.meret*1.2							,masik.y+masik.meret*1.2,
 				masik.x + masik.meret*1.2							,masik.bkp[masikBKP][1],
 				masik.bkp[masikBKP][0],masik.bkp[masikBKP][1],
@@ -189,21 +200,20 @@ print(canvas)
 canvas.pack(fill=BOTH, expand= 1)
 
 
-elem1 = elem(0,0,100,canvas)
+#elem1 = elem(0,0,100,canvas)
 #elem1.rajz()
 
-elem2 = elem(200,100,50,canvas)
-#elem2.rajz()
-
-kapcsolo1 = kapcsolo(350, 200, 100, canvas)
-
-lampa1 = lampa(0, 400, 100, canvas)
-
-ellenallas1 = Ellenállás(500,150,100, canvas)
 
 
+kapcsolo1 = kapcsolo(200, 200, 100, canvas)
 
-#lampa1.vezetek(kapcsolo1,sajatBKP=0,masikBKP =0)
+lampa1 = lampa(99, 10, 100, canvas)
+
+#ellenallas1 = Ellenállás(500,150,100, canvas)
+
+
+
+lampa1.vezetek(kapcsolo1,sajatBKP=1,masikBKP =0)
 lampa1.vezetek(kapcsolo1,sajatBKP=1,masikBKP =1)
 
 
