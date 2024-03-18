@@ -7,4 +7,11 @@ class Nasa:
         self.image = vag[2]
         self.status = vag[3].split(" ")[0]
         self.size = vag[3].split(" ")[1]
+    def ByteMeret(self):
+        if self.size== "-":
+            return 0
+        else:
+            return int(self.size)
+        
+
         
