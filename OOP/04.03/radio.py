@@ -15,6 +15,7 @@ for egySor in f:
 
 f.close()
 
+
 print("2.feladat:")
 print("Az első üzenet rögzítője:{}".format(uzenetek[0].amator))
 print("Az utolsó üzenet rögzítője:{}".format(uzenetek[-1].amator))
@@ -26,6 +27,19 @@ for egyUzenet in uzenetek:
 
 napok = []
 
-tempNap = rc.Nap(1)
-for egyUzenet in uzenetek:
-    pass
+while len(napok) < 11:
+    tempNap = rc.Nap(len(napok)+1)
+    for egyUzenet in uzenetek:
+        if egyUzenet.nap == len(napok)+1:
+            tempNap.hozzaAd(egyUzenet)
+napok.append(tempNap)
+
+'''másik megoldás, számlálós ciklussal
+napok=[]
+
+for i in range(1,12):
+    tempNap = rc.Nap(i)
+    for egyUzenet in uzenetek:
+        if egyUzenet.nap == i:
+            tempNap.hozzaAd(egyUzenet)
+'''

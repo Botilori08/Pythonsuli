@@ -21,5 +21,9 @@ class Nap:
 
     def hozzaAd(self,uzenet):
         self.uzenetek.append(uzenet)
+    
+    def uzenetSzam(self):
+        return len(self.uzenetek)
+
 
 
