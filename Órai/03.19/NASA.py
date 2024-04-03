@@ -38,4 +38,4 @@ for egyAdat in adatok:
 ''' 
 print("9.feladat: Statisztika:")
 for elem in stat:
-    print("\t{}:{} db".format(elem,stat[elem]))
+    print("\t{}: {} db".format(elem,stat[elem]))
