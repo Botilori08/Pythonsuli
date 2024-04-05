@@ -32,7 +32,9 @@ while len(napok) < 11:
     for egyUzenet in uzenetek:
         if egyUzenet.nap == len(napok)+1:
             tempNap.hozzaAd(egyUzenet)
-napok.append(tempNap)
+    napok.append(tempNap)
+
+
 
 '''másik megoldás, számlálós ciklussal
 napok=[]
@@ -43,3 +45,14 @@ for i in range(1,12):
         if egyUzenet.nap == i:
             tempNap.hozzaAd(egyUzenet)
 '''
+print("4. feladat")
+for egyNap in napok:
+    print("{}.nap {} rádióamatőr".format(egyNap.nap,egyNap.uzenetSzam()))
+    # másképp: print(f"{egyNap.nap}.nap {egyNap.uzenetSzam()} rádióamatőr")
+
+
+f = open("adaas.txt","w")
+for uzenet in napok:
+    f.write(uzenet.helyreAllit())
+f.close()
+

@@ -25,5 +25,15 @@ class Nap:
     def uzenetSzam(self):
         return len(self.uzenetek)
 
+    def helyreAllit(self):
+        megfejtes = self.uzenetek[0].uzenet
+        for i,karakter in enumerate(megfejtes):
+            if karakter == "#":
+                for egyUzenet in self.uzenetek:
+                    if egyUzenet.uzenet[i] != "#":
+                        megfejtes = megfejtes[:i] + egyUzenet.uzenet[i] + megfejtes[i+1:] # string összefűzés
+                        break
+        return megfejtes
+
 
 
