@@ -56,3 +56,14 @@ for uzenet in napok:
     f.write(uzenet.helyreAllit())
 f.close()
 
+print("7.feladat:")
+napSzam = int(input("Adja meg a nap sorszámát:"))
+amatorSzam = int(input("Adja meg a rádióamatőr sorszámát:"))
+
+
+keresett = napok[napSzam].amatorSzama(amatorSzam) 
+
+if not keresett:
+    print("Nincs ilyen feljegyzés")
+else:
+    print(keresett.uzenet)
