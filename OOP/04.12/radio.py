@@ -61,9 +61,9 @@ napSzam = int(input("Adja meg a nap sorszámát:"))
 amatorSzam = int(input("Adja meg a rádióamatőr sorszámát:"))
 
 
-keresett = napok[napSzam].amatorSzama(amatorSzam) 
+keresett = napok[napSzam-1].amatorSzama(amatorSzam) 
 
 if not keresett:
     print("Nincs ilyen feljegyzés")
 else:
-    print(keresett.uzenet)
+    print("A megfigyelt egyedek szama: {}".format(keresett.kifejlett+keresett.kojok))
