@@ -29,5 +29,7 @@ for egyAdat in lista:
 print("3. feladat")
 print("A fürdőben {} vendég járt 1 részlegen".format(darab))
 
+for egyAdat in lista:
+    
 
 
