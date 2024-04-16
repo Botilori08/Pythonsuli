@@ -1,5 +1,13 @@
 import furdoClass as fc
 
+def idoVissza(mp): # másodperc értékek visszaváltása óra:perc:másodperc formátumba
+    ora = mp//(60*60)
+    perc = mp%(60*60)//60
+    masodperc = mp% 3600 % 60
+    return str(ora)+":"+str(perc)+":"+str(masodperc)
+
+
+
 f = open("furdoadat.txt")
 lista = []
 for egySor in f:
@@ -29,7 +37,23 @@ for egyAdat in lista:
 print("3. feladat")
 print("A fürdőben {} vendég járt 1 részlegen".format(darab))
 
-for egyAdat in lista:
-    
+kezdoIdo = 0
+legtobbIdo = 0 
+legtobbIdoVendeg = 0 #vendeg azonosítója
+for egyElem in lista:
+    if egyElem.belepett and egyElem.reszleg == 0:
+        bentiIdo = egyElem.IdoMp()-kezdoIdo
+        if bentiIdo > legtobbIdo:
+            legtobbIdo = bentiIdo    
+            legtobbIdoVendeg = egyElem.vendeg
+
+    if not egyElem.belepett and egyElem.reszleg == 0:
+        kezdoIdo = egyElem.idoMp()
+
+print("4.feladat")
+print("A legtöbb időt eltöltő vendég")
+print("{}.vendég {}".format(legtobbIdoVendeg,idoVissza(legtobbIdo)))
+
+#idővisszaváltás két számjegyre 0 -> 9 (fromázott kiiratás str formátumban) pl: "09"
 
 

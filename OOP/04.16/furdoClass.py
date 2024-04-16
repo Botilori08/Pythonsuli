@@ -13,4 +13,5 @@ class Furdoclass:
     
     def idoMp(self):
         return self.ora*60*60 + self.perc*60 + self.masodperc
+    
 
