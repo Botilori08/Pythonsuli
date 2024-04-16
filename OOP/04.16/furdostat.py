@@ -42,7 +42,7 @@ legtobbIdo = 0
 legtobbIdoVendeg = 0 #vendeg azonosítója
 for egyElem in lista:
     if egyElem.belepett and egyElem.reszleg == 0:
-        bentiIdo = egyElem.IdoMp()-kezdoIdo
+        bentiIdo = egyElem.idoMp()-kezdoIdo
         if bentiIdo > legtobbIdo:
             legtobbIdo = bentiIdo    
             legtobbIdoVendeg = egyElem.vendeg
@@ -54,6 +54,12 @@ print("4.feladat")
 print("A legtöbb időt eltöltő vendég")
 print("{}.vendég {}".format(legtobbIdoVendeg,idoVissza(legtobbIdo)))
 
-#idővisszaváltás két számjegyre 0 -> 9 (fromázott kiiratás str formátumban) pl: "09"
+#Hf: idővisszaváltás két számjegyre 0 -> 9 (fromázott kiiratás str formátumban) pl: "09"
+lista = [0,1,2,3,4,5,6,7,8,9]
+for i in lista:
+    print("0{}".format(i))
+
+
+    
 
 
