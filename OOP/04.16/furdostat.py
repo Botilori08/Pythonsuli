@@ -4,6 +4,8 @@ def idoVissza(mp): # másodperc értékek visszaváltása óra:perc:másodperc f
     ora = mp//(60*60)
     perc = mp%(60*60)//60
     masodperc = mp% 3600 % 60
+    if masodperc < 10:
+        masodperc = "0{}".format(mp% 3600 % 60)
     return str(ora)+":"+str(perc)+":"+str(masodperc)
 
 
