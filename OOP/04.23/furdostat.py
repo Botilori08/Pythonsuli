@@ -1,0 +1,110 @@
+import furdoClass as fc
+
+def idoVissza(mp): # másodperc értékek visszaváltása óra:perc:másodperc formátumba
+    ora = mp//(60*60)
+    perc = mp%(60*60)//60
+    masodperc = mp% 3600 % 60
+    #if masodperc < 10:
+    #    masodperc = "0{}".format(mp% 3600 % 60)
+    return "{:02}:{:02}:{:02}".format(ora,perc,masodperc)
+    return str(ora)+":"+str(perc)+":"+str(masodperc)
+
+
+
+f = open("furdoadat.txt")
+lista = []
+for egySor in f:
+    lista.append(fc.Furdoclass(egySor))
+f.close()
+print("2.feladat:")
+print("Az első vendég {}-kor lépett ki az öltözőből".format(lista[0].ido()))
+
+
+utolso = lista[0]
+for egyElem in lista:
+    if not egyElem.belepett and egyElem.reszleg==0:
+        utolso = egyElem 
+print("Az utolsó vendég {}-kor lépett ki az öltözőből".format(utolso.ido()))
+
+darab = 0
+elozo = -1
+temp = 1
+for egyAdat in lista:
+    if elozo == egyAdat.vendeg:
+        temp+=1
+    else:
+        if temp == 4:
+            darab+=1
+        elozo = egyAdat.vendeg
+        temp = 1
+print("3. feladat")
+print("A fürdőben {} vendég járt 1 részlegen".format(darab))
+
+kezdoIdo = 0
+legtobbIdo = 0 
+legtobbIdoVendeg = 0 #vendeg azonosítója
+for egyElem in lista:
+    if egyElem.belepett and egyElem.reszleg == 0:
+        bentiIdo = egyElem.idoMp()-kezdoIdo
+        if bentiIdo > legtobbIdo:
+            legtobbIdo = bentiIdo    
+            legtobbIdoVendeg = egyElem.vendeg
+
+    if not egyElem.belepett and egyElem.reszleg == 0:
+        kezdoIdo = egyElem.idoMp()
+
+print("4.feladat")
+print("A legtöbb időt eltöltő vendég")
+print("{}.vendég {}".format(legtobbIdoVendeg,idoVissza(legtobbIdo)))
+
+#hf idővisszaváltás két számjegyre 0-tól 9-ig (formázott kiiratás str)
+#lista = [0,1,2,3,4,5,6,7,8,9]
+#for i in lista:
+#    print("0{}".format(i))
+
+
+print(idoVissza(legtobbIdo))
+print("{}. vendég {}".format(legtobbIdoVendeg,idoVissza(legtobbIdo)))
+
+stat = [0,0,0]
+
+for egyElem in lista:
+    if egyElem.reszleg == 0 and not egyElem.belepett:
+        if egyElem.ora < 9:
+            stat[0] += 1
+        elif egyElem.ora < 16:
+            stat[1] += 1
+        else:
+            stat[2] += 1
+
+print("5. feladat")
+print("6-9 óra között {} vendég".format(stat[0]))
+print("9-16 óra között {} vendég".format(stat[1]))
+print("16-20 óra között {} vendég".format(stat[2]))
+#Másképpen
+#print("6-9 óra között {} vendég\n9-16 óra között {} vendég\n16-20 óra között {} vendég\n".format(*stat))
+
+szaunastat = {}
+temp = 0
+for egyElem in lista:
+    if egyElem.reszleg == 2:
+        if egyElem.belepett:
+            temp = egyElem.idoMp()
+        else:
+            if egyElem.vendeg not in szaunastat.keys():
+                szaunastat[egyElem.vendeg]=0
+            szaunastat[egyElem.vendeg] += egyElem.idoMp() - temp
+
+f = open("szauna.txt","w")
+for elem in szaunastat:
+    f.write("{},{}\n".format(elem, idoVissza(szaunastat[elem])))
+f.close()
+
+reszlegstat = {}
+for egyElem in lista:
+    if egyElem.belepett:
+        if egyElem.reszleg not in reszlegstat.keys():
+            reszlegstat[egyElem.reszleg] = []
+        if egyElem.vendeg not in reszlegstat[egyElem.reszleg]:
+            reszlegstat[egyElem.reszleg].append(egyElem.vendeg)
+   
