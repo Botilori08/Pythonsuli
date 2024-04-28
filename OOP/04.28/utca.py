@@ -3,7 +3,7 @@ class Telek:
         vag = sor.split(" ")
         self.oldal = int(vag[0])
         self.szelesseg = int(vag[1])
-        self.szin = vag[2]
+        self.szin = vag[2].strip()
         self.hazszam = 0
 
 telkek = []
@@ -26,3 +26,18 @@ else:
 print("Az utolsó telek házszáma:{}".format(telkek[-1].hazszam))
 
 oldalSzerint= [[],[]]
+for egyTelek in telkek:
+    if egyTelek.oldal == 0:
+        oldalSzerint[0].append(egyTelek.oldal)
+    else:
+        oldalSzerint[1].append(egyTelek.oldal)
+
+hazszinek = [[],[]]
+for egyHaz in telkek:
+        if egyHaz.oldal == 0:
+            hazszinek[0].append(egyHaz.szin)
+        else:
+            hazszinek[1].append(egyHaz.szin)
+print(hazszinek)
+
+
