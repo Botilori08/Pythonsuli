@@ -6,9 +6,9 @@ class Dolgozok:
         self.anyjaneve = vagas[2]
         self.telepules = vagas[3]
         self.cim = vagas[4]
-        self.netto = vagas[5]
+        self.netto = int(vagas[5])
         self.juttatas = vagas[6]
-        self.belepes = vagas[7]
+        self.belepes = int(vagas[7].split("-")[0])
         self.szuletes = vagas[8]
         self.szulhely = vagas[9]
 
@@ -17,6 +17,11 @@ class Dolgozok:
 f = open("dolgozok.txt",encoding="utf8")
 sorLista = []
 for egySor in f:
-    sorLista.append(Dolgozok(egySor.strip()))
+    sorLista.append(Dolgozok(egySor))
 f.close()
-print()
+#print(sorLista)
+dolgozok = []
+for egyElem in sorLista:
+    if egyElem.belepes > 2005:
+        dolgozok.append(egyElem.nev)
+
