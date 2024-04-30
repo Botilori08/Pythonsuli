@@ -1,12 +1,13 @@
 class Dolgozok:
     def __init__(self,sor):
-        vagas = sor.split(";")
-        self.azonosito = vagas[0]
+        vagas = sor.strip().split(";")
+        for i in range(len(vagas)):
+            vagas[i] = vagas[i].strip('""')
+        self.azonosito = int(vagas[0])
         self.nev = vagas[1]
         self.anyjaneve = vagas[2]
         self.telepules = vagas[3]
         self.cim = vagas[4]
-        print(vagas[5])
         self.netto = int(vagas[5])
         self.juttatas = vagas[6]
         self.belepes = int(vagas[7].split("-")[0])
@@ -21,10 +22,14 @@ sorLista = []
 for egySor in f:
     sorLista.append(Dolgozok(egySor))
 f.close()
-sorLista.pop(0)
-print(sorLista)
-dolgozok = []
-for egyElem in sorLista:
-    if egyElem.belepes > 2005:
-        dolgozok.append(egyElem.nev)
+#print(sorLista)
+dolgozoLista = []
+berLista = []
+for egyDolgozo in sorLista:
+    if egyDolgozo.belepes > 2005:
+        dolgozoLista.append(egyDolgozo.nev)
+        berLista.append(egyDolgozo.netto)
+
+print(dolgozoLista)
+print(berLista)
 
