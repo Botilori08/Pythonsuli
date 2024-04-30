@@ -6,6 +6,7 @@ class Dolgozok:
         self.anyjaneve = vagas[2]
         self.telepules = vagas[3]
         self.cim = vagas[4]
+        print(vagas[5])
         self.netto = int(vagas[5])
         self.juttatas = vagas[6]
         self.belepes = int(vagas[7].split("-")[0])
@@ -15,11 +16,13 @@ class Dolgozok:
 
 
 f = open("dolgozok.txt",encoding="utf8")
+f.readline()
 sorLista = []
 for egySor in f:
     sorLista.append(Dolgozok(egySor))
 f.close()
-#print(sorLista)
+sorLista.pop(0)
+print(sorLista)
 dolgozok = []
 for egyElem in sorLista:
     if egyElem.belepes > 2005:

@@ -25,12 +25,17 @@ else:
     print("A páratlan oldalon adták el az utolsó telket")
 print("Az utolsó telek házszáma:{}".format(telkek[-1].hazszam))
 
+
+
+
+'''
 oldalSzerint= [[],[]]
 for egyTelek in telkek:
     if egyTelek.oldal == 0:
         oldalSzerint[0].append(egyTelek.oldal)
     else:
         oldalSzerint[1].append(egyTelek.oldal)
+
 
 hazszinek = [[],[]]
 for egyHaz in telkek:
@@ -39,5 +44,37 @@ for egyHaz in telkek:
         else:
             hazszinek[1].append(egyHaz.szin)
 print(hazszinek)
+'''
 
+oldalSzerint= [[],[]]
+for egyTelek in telkek:
+    oldalSzerint[egyTelek.oldal].append(egyTelek)
+
+print("4.feladat")
+for i in range(1,len(oldalSzerint[1])):
+    if oldalSzerint[1][i].szin == oldalSzerint[1][i-1].szin and oldalSzerint[1][i].szin not in ["#",":"]:
+        print("A szomszédossal egyezik a kerítés színe: {}".format(oldalSzerint[1][i].hazszam))
+        break
+
+print("5. feladat")
+
+hazszam = int(input("Adjon meg egy házszámot! "))
+
+for i, egyHaz in enumerate(telkek):
+    if egyHaz.hazszam == hazszam:
+        print("Kerítés színe/állapota: {}".format(egyHaz.szin))
+
+        szinek="QWERTZUIOPASDFGHJKLYXCVBNM"
+        szinek = szinek.replace(egyTelek.szin,"")
+        if i >0:
+            szinek = szinek.replace(telkek[i-1].szin,"")
+        if i < len(telkek):
+            szinek = szinek.replace(telkek[i+1].szin,"")
+
+        print("Egy lehetséges festési szín {}".format(szinek[0]))
+        break
+else:
+    print("Nincs ilyen házszám!")
+
+#Hf utolsó feladat 
 

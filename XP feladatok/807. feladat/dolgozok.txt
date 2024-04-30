@@ -1,3 +1,4 @@
+"az";"nev";"anyjaneve";"telepules";"cim";"netto";"juttatas";"belepes";"szuletes";"szulhely"
 "16";"Fekete Zoltán";"Fehér Edit";"Tab";"Holdfény utca u.19";"630000";"10000";"2007-04-16";"1979-07-15";"Tab"
 "17";"Szabó Lajos";"Nagy Erzsébet";"Izsófalva";"Babits Mihály utca u.86";"210000";"5000";"2002-08-17";"1957-04-16";"Izsófalva"
 "18";"Erdős Dániel";"Erős Erzsébet";"Szany";"Gárdonyi Géza utca u.57";"700000";"0";"2003-10-12";"1981-11-07";"Dunaújváros"
