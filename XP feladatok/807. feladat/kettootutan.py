@@ -30,6 +30,10 @@ for egyDolgozo in sorLista:
         dolgozoLista.append(egyDolgozo.nev)
         berLista.append(egyDolgozo.netto)
 
-print(dolgozoLista)
-print(berLista)
-
+#print(dolgozoLista)
+#print(berLista)
+print("2005 után érkezett dolgozók és nettó bérük:")
+for egyMunkas in dolgozoLista:
+    print("{}".format(egyMunkas))
+for egyBer in berLista:
+    print("{}Ft".format(egyBer))
