@@ -33,7 +33,5 @@ for egyDolgozo in sorLista:
 #print(dolgozoLista)
 #print(berLista)
 print("2005 után érkezett dolgozók és nettó bérük:")
-for egyMunkas in dolgozoLista:
-    print("{}".format(egyMunkas))
-for egyBer in berLista:
-    print("{}Ft".format(egyBer))
+for i,egyMunkas in enumerate(dolgozoLista):
+    print("{}: {}Ft".format(egyMunkas,berLista[i]))
