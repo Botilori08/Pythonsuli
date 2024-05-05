@@ -32,8 +32,20 @@ for egyErtek in fizetesek:
     osszFizetes += egyErtek
 print("A fizetések átlaga: {} Ft".format(math.floor(osszFizetes / len(fizetesek))))
 
+lakhelyVizsgalat = False
 for egylakhely in lista:
     if egylakhely.telepules == "Recsk":
-        print("Van recski dolgozó.")
+        lakhelyVizsgalat = True
     else:
-        print("Nincs recski dolgozó.")
+        lakhelyVizsgalat = False
+
+    if lakhelyVizsgalat == True:
+        print("Van recski dolgozó.")
+
+tataiakSzama = 0
+for egyLakos in lista:
+    if egyLakos.telepules == "Tata":
+        tataiakSzama += 1
+print("{} db tatai dolgozó van".format(tataiakSzama))
+
+
