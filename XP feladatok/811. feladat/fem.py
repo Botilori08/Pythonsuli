@@ -13,8 +13,22 @@ fembtLista = []
 for egySor in f:
     fembtLista.append(Fembt(egySor))
 f.close()
-Kvezetnev = 0
+Kvezeteknev = 0
 for egynev in fembtLista:
     if egynev.vezeteknev[0] == "K":
-        Kvezetnev += 1
-print(Kvezetnev)
+        Kvezeteknev += 1
+print("{} ember vezetékneve kezdődik K betűvel.".format(Kvezeteknev))
+Kkeresztnev = 0
+for egyNev in fembtLista:
+    if egyNev.keresztnev[0] == "K":
+        Kkeresztnev +=1
+print("{} ember keresztneve kezdődik K betűvel".format(Kkeresztnev))
+
+varosok = []
+for egyVaros in fembtLista:
+    varosok.append(egyVaros.telepules)
+lakhelyek = list(dict.fromkeys(varosok))
+
+print("Dolgozók lakhelyei:")
+for egyLakhely in lakhelyek:
+    print("\t" + egyLakhely)
