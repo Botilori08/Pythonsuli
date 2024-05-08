@@ -26,3 +26,23 @@ for egyFizetes in hatszolFizetes:
     osszFizetes += egyFizetes
 
 print("A hatvani és szolnoki dolgozók átlagbére {} Ft".format(math.floor(osszFizetes / len(hatszolFizetes))))
+
+szuletesek = []
+for egydatum in kontenerKft:
+    szuletesek.append(egydatum.szuletes)
+szuletesek.sort()
+
+legidosebb = szuletesek[0]
+legidosebbNeve = ""
+legfiatalabb = szuletesek[-1]
+legfiatalabbNeve = ""
+for egyNev in kontenerKft:
+    if egyNev.szuletes == legidosebb:
+        legidosebbNeve = egyNev.nev
+    if egyNev.szuletes == legfiatalabb:
+        legfiatalabbNeve = egyNev.nev
+
+print("A legidősebb dolgozó: {}".format(legidosebbNeve))
+print("A legfiatalabb dolgozó: {}".format(legfiatalabbNeve))
+
+
