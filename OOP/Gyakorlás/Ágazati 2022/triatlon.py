@@ -34,5 +34,5 @@ for egyIdo in triatlonLista:
 idok.sort()
 print("3.feladat: A verseny nyertese:")
 print("neve: {}")
-print("rajtszáma: {}")
+print("rajtszáma: {}".format())
 print("összideje: {}".format(Visszavalto(idok[0])))
