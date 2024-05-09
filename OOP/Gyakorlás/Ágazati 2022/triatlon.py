@@ -14,9 +14,16 @@ class Triatlon:
 
 def Visszavalto(mp):
     ora = mp//(60*60)
+    if ora < 10:
+        ora = "0{}".format(mp//(60*60))
     perc = mp%(60*60)//60
+    if perc < 10:
+        perc= "0{}".format(mp%(60*60)//60)
     masodperc = mp % 3600 % 60
-    return "{:02}:{:02}:{:02}".format(ora,perc,masodperc)
+    if masodperc < 10:
+        masodperc= "0{}".format(mp % 3600 % 60)
+                                
+    return "{}:{}:{}".format(ora,perc,masodperc)
  
 
 f = open("triatlon.txt",encoding="utf8")
@@ -29,10 +36,21 @@ print("2.feladat: A versenyen {} induló volt".format(len(triatlonLista)))
 
 idok = []
 for egyIdo in triatlonLista:
-    idok.append(egyIdo.uszasIdoMp+egyIdo.kerekparIdoMp+egyIdo.futasIdoMp)
-
+    idok.append(Visszavalto(egyIdo.uszasIdoMp+egyIdo.kerekparIdoMp+egyIdo.futasIdoMp))
 idok.sort()
+nyertes = ""
+rajtszam = 0
+for egyTime in triatlonLista:
+    if Visszavalto(egyTime.uszasIdoMp+egyTime.kerekparIdoMp+egyTime.futasIdoMp) == idok[0]:
+        nyertes = egyTime.nev
+        rajtszam = egyTime.rajtszam
+
 print("3.feladat: A verseny nyertese:")
-print("neve: {}")
-print("rajtszáma: {}".format())
-print("összideje: {}".format(Visszavalto(idok[0])))
+print("neve: {}".format(nyertes))
+print("rajtszáma: {}".format(rajtszam))
+print("összideje: {}".format(idok[0]))
+
+f = open("osszidok.txt","w")
+for egyOsszeg in triatlonLista:
+    f.write("{};{};{}".format(egyOsszeg.rajtszam,egyOsszeg.nev,Visszavalto(egyOsszeg.uszasIdoMp+egyOsszeg.kerekparIdoMp+egyOsszeg.futasIdoMp))+"\n")
+f.close()
