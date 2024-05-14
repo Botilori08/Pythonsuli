@@ -39,4 +39,4 @@ def haromHaromszog():
         haromszog(adatsor3)
         if len(adatsor3) < 4:
             break
-    return print(adatsor1), print(adatsor2),print(adatsor3)
+    
