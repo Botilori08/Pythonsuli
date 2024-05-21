@@ -1,13 +1,14 @@
 szavak = []
 sorszam = 1
 elozo = ""
-
-while szavak == []:
-    if sorszam == 2:
-        szo= input("Kérem az {}. szót! ".format(sorszam))
-        elozo = szo
-        szavak.append(szo)
-        sorszam += 1
-    else:
-        elozo= input("Kérem az {}. szót! ".format(sorszam))
-        print("számting")
+lefutasok = 0
+while len(szavak) < 20:
+            szo = input("Kérem a(z) {}. szót! ".format(sorszam))
+            sorszam += 1
+            szavak.append(szo)
+            if len(szo) > 6:
+                    print("A karakterek száma téves!")
+            if lefutasok != 0:
+                if (szavak[-1])[-1] == szo[0]:
+                        print("Nem illeszkedett!")
+    
