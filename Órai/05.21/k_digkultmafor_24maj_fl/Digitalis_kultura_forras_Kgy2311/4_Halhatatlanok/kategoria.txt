@@ -1,0 +1,6 @@
+﻿id	nev
+1	Színésznő
+2	Színész
+3	Operaénekes
+4	Táncművész
+5	Zenés színész

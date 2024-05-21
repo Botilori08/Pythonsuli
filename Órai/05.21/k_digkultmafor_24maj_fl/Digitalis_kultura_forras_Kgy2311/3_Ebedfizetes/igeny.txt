@@ -1,0 +1,195 @@
+﻿Név	Oszt	Kedv	H	K	Sze	Cs	P	H	K	Sze	Cs	P	H	K	Sze	Cs	P	H	K	Sze	Cs	P					Térítési díj:	830
+Aba Márkó	6.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1					Adagok
+Ádám Virgínia	5.a	x	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1					Legtöbb:
+Agócs Menyhért	7.a		1	1	1	1	1	1	1				1	1	1	1	1	1	1	1	1	1					Legkevesebb:
+Alexander Emese	6.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1					Péntekenként:
+Ambrus Vendel	8.a		1	1	1	1	1	1	1	1	1	1	1	1	1			1	1	1	1	1
+Aranyosi Korinna	5.a		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1						Tanuló	Adag	Összes
+Bacsai Lenke	5.b		1	1	1	1		1	1	1	1		1	1	1	1		1	1	1	1						5.a
+Bagyura Klaudia	6.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1					5.b
+Bajusz Kornélia	6.a	x	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1					6.a
+Bálinth Ildikó	5.b		 	 	 	 		1	1	1	1		1	1	1	1		1	1	1	1						6.b
+Ballogh Lea	8.b	x	1	1	1	1	1	1	1				1	1	1	1	1	1	1	1	1	1					7.a
+Ballogh Zseraldin	8.b	x	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1					7.b
+Bárkányi Jadviga	7.a		1	1	1	1	1	1	1				1	1	1	1	1	1	1	1	1	1					8.a
+Bárky Valér	7.a		1	1	1	1	1	1	1				1	1	1	1	1	1	1	1	1	1					8.b	
+Bártfai Natália	5.a		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Bartók Aléna	5.a	x	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Berczeli Gusztáv	8.a		1	1	1	1	1	1	1	1	1	1	1	1	1			1	1	1	1	1
+Beretvás József	8.a		1	1	1	1	1	1	1	1	1	1	1	1	1			1	1	1	1	1
+Biri Csongor	6.b	x	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Biri Egyed	5.b	x	1	1	1	1		1	1	1	1		1	1	1	1		1	1	1	1	
+Biri Kinga	8.a	x	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Bolgár Ágota	7.a	x	1	1	1	1	1	1	1				1	1	1	1	1	1	1	1	1	1
+Bolgár Nándor	8.a		1	1	1	1	1	1	1	1	1	1	1	1	1			1	1	1	1	1
+Bozzai Dominik	8.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Bőhm Vanessza	6.b		1	1	 	 	 	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Bródy Jonatán	5.a		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Brozsek István	5.a	x	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Bugár Samu	6.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Czigány Boróka	8.b		1	1	1	1		1	1	1	1		1	1	1	1		1	1	1	1	
+Darabont Ulrik	8.a		1	1	1	1	1	1	1	1	1	1	1	1	1			1	1	1	1	1
+Darázs Attila	6.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Debreczeni Bozsidár	8.a		1	1	1	1	1	1	1	1	1	1	1	1	1			1	1	1	1	1
+Denghofer Júlia	7.a		1	1	1	1	1	1	1				1	1	1	1	1	1	1	1	1	1
+Dimitrijevics Titusz	6.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Dusza Felícia	6.b	x	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Ebedli Dorisz	7.a		1	1	1	1	1	1	1				1	1	1	1	1	1	1	1	1	1
+Eckert Bozsidár	8.a		1	1	1	1	1	1	1	1	1	1	1	1	1			1	1	1	1	1
+Ecseri Katalin	6.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Engelhardt Acsád	5.a	x	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Erdős Otília	5.b	x	1	1	1	1		1	1	1	1		1	1	1	1		1	1	1	1	
+Erkli Zsolna	6.a		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Eszterházy Viktória	6.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Fabricius Leila	6.a		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Faggyas Daniella	6.b		 	 	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Fancsalszky Emőke	5.a		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Fási Kálmán	8.a		1	1	1	1	1	1	1	1	1	1	1	1	1			1	1	1	1	1
+Fecske Oszkár	7.a	x	1	1	1	1	1	1	1				1	1	1	1	1	1	1	1	1	1
+Fejszés Cecília	6.a		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Feldmár Boglárka	7.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Fölföldi Herbert	6.a		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Fridrich Eta	8.a		1	1	1	1	1	1	1	1	1	1	1	1	1			1	1	1	1	1
+Frühwald Beáta	7.a		1	1	1	1	1	1	1				1	1	1	1	1	1	1	1	1	1
+Fux Viktória	5.b		1	1	1	1		1	1	1	1		1	1	1	1		1	1	1	1	
+Füredi Nóra	5.b		1	1	1	1		1	1	1	1		1	1	1	1		1	1	1	1	
+Gallai Nagyezsda	7.b	x	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Gallai Hetény	5.a	x	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Gellai Hildegárd	8.a	x	1	1	1	1	1	1	1				1	1	1	1	1	1	1	1	1	1
+Gera Armanda	7.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Gerendás Szidónia	5.b		1	1	1	1		1	1	1	1		1	1	1	1		1	1	1	1	
+Gergelyfy Kitti	7.b		1	1	 	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Gerle Szandra	5.b		1	1	1	1		1	1	1	1		1	1	1	1		1	1	1	1	
+Gersics Eszter	5.b		1	1	1	1		1	1	1	1		1	1	1	1		1	1	1	1	
+Giczy Dezső	5.a		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Glázner Jázmin	8.a	x	1	1	1	1	1	1	1	1	1	1	1	1	1			1	1	1	1	1
+Göbölyös Anabella	5.a		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Gőgös Dalma	5.b		1	1	1	1		1	1	1	1		1	1	1	1		1	1	1	1	
+Gömöri Liána	7.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Görög Aranka	5.a		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Görög Simon	6.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Gusztos Urszula	5.b		1	1	1	1		1	1	1	1		1	1	1	1		1	1	1	1	
+Gutai Györgyi	7.a		1	1	1	1	1	1	1				1	1	1	1	1	1	1	1	1	1
+Hadnagy Abigél	8.a	x	1	1	1	1	1	1	1	1	1	1	1	1	1			1	1	1	1	1
+Hadnagy Apaj	8.a	x	1	1	1	1	1	1	1	1	1	1	1	1	1			1	1	1	1	1
+Hadnagy Endre	5.b	x	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Halász-Nagy Helmut	6.a		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Halmi Bonifác	7.a		1	1	1	1	1	1	1				1	1	1	1	1	1	1	1	1	1
+Hamburger Magdolna	8.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Hódi Béla	7.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Hódi Lajos	6.a		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Hufnagel Gedeon	6.a	x	 	 	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Ilovszky Zorán	7.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Ivan Beatrix	6.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Ivancsics Dominka	5.a		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Jakabfalvy Alexander	8.b	x	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Jalsovszky Kármen	6.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Jávor Bernát	5.a		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Jilling Martos	7.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Kacsóh Rózsa	6.a		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Kácsor Zsüliett	8.a		1	1	1	1	1	1	1	1	1	1	1	1	1			1	1	1	1	1
+Kapás Ivon	7.a		1	1	1	1	1	1	1				1	1	1	1	1	1	1	1	1	1
+Kárász Ajtony	6.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Kárpáthy Milán	6.a		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Kobak Tifani	6.a		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Koós Ferenc	6.a		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Kovács Atlasz	6.a	x	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Kovács Gyöngyvér	8.a		1	1	1	1	1	1	1	1	1	1	1	1	1			1	1	1	1	1
+Könczöl Zorán	7.a		1	1	1	1	1	1	1				1	1	1	1	1	1	1	1	1	1
+Kőrösi Bálint	7.a		1	1	1	 	 	1	1				1	1	1	 	 	1	1	1	 	 
+Kreisz Gyöngyi	7.a		1	1	1	1	1	1	1				1	1	1	1	1	1	1	1	1	1
+Kristofics Teodóra	6.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Krizsán Géza	7.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Kucsera Győző	5.b		1	1	1	1		1	1	1	1		1	1	1	1		1	1	1	1	
+Kulka Írisz	5.b		1	1	1	1		1	1	1	1		1	1	1	1		1	1	1	1	
+Kumin Inge	8.a		1	1	1	1	1	1	1	1	1	1	1	1	1			1	1	1	1	1
+Lakat Loránd	6.a		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Lázár Zoltán	5.b	x	1	1	1	1		1	1	1	1		1	1	1	1		1	1	1	1	
+Lendvay László	8.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Maczák Alexa	7.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Mándy Nimród	7.a		1	1	1	1	1	1	1				1	1	1	1	1	1	1	1	1	1
+Márkus Gina	7.a		1	1	1	1	1	1	1				1	1	1	1	1	1	1	1	1	1
+Matuska Glenda	7.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Micskey Eleonóra	8.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Milenkovics Pamela	5.b		1	1	1	1		1	1	1	1		1	1	1	1		1	1	1	1	
+Módos Manuel	7.a		1	1	1	1	1	1	1				1	1	1	1	1	1	1	1	1	1
+Móricz Jenő	8.b	x	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Nádas Ede	5.b		1	1	1	1		1	1	1	1		1	1	1	1		1	1	1	1	
+Nógrádi Timót	5.b		1	1	1	1		1	1	1	1		1	1	1	1		1	1	1	1	
+Noszek Bíborka	6.a		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Nyers Barna	6.a	x	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Nyers Dorisz	8.b	x	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Nyers Ambrus	5.a	x	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Nyitrai Armanda	8.b		1	1	 	1	1	1	1	 	1	1	1	1	 	1	1	1	1	 	1	1
+Ormai Elli	6.a		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Orosz Brúnó	7.b	x	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Orosz Gedeon	8.b	x	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Orosz Nimród	7.b	x	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Ökrös Hélia	7.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Pádár Atanáz	6.a		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Pápai Flórián	7.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Pápai Teodóra	5.b		1	1	1	1		1	1	1	1		1	1	1	1		1	1	1	1	
+Paszternák Margó	7.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Pelikán Turul	8.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Petri Lehel	7.a		1	1	1	1	1	1	1				1	1	1	1	1	1	1	1	1	1
+Polacsek Kíra	6.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Polacsek Sándor	5.a		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Polonyi Elemér	7.a		1	1	1	1	1	1	1				1	1	1	1	1	1	1	1	1	1
+Possert Julietta	5.b	x	1	1	1	1		1	1	1	1		1	1	1	1		1	1	1	1	
+Prépost Teréz	8.a		1	1	1	1	1	1	1	1	1	1	1	1	1			1	1	1	1	1
+Pünkösdi Violetta	5.a		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Rácz Ramóna	7.b		 	1	1	1	1	 	1	1	1	1	 	1	1	1	1	 	1	1	1	1
+Ráday Bertalan	7.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Rákász Márton	6.a		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Rapcsányi Áchim	6.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Rátgéber Lídia	6.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Réber Emma	8.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Sáfrány Bonifác	5.b		1	1	1	1		1	1	1	1		1	1	1	1		1	1	1	1	
+Sámuel Acsád	8.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Soltész Szonja	7.b	x	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Solti Ede	8.a		1	1	1	1	1	1	1	1	1	1	1	1	1			1	1	1	1	1
+Solti Trisztán	5.b		1	1	1	1		1	1	1	1		1	1	1	1		1	1	1	1	
+Sóvágó Gina	7.a		1	1	1	1	1	1	1				1	1	1	1	1	1	1	1	1	1
+Sóvágó Teodor	6.a		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Sternberger Renátó	5.a		1		1	1	1	1		1	1	1	1		1	1	1	1	 	1	1	1
+Strelinger Johanna	5.b		1	1	1	1		1	1	1	1		1	1	1	1		1	1	1	1	
+Szabó Bence	6.a		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Szalmási Eperke	8.a		1	1	1	1	1	1	1	1	1	1	1	1	1			1	1	1	1	1
+Szaszkó Izsák	8.b	x	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Szaszkó Zoltán	7.b	x	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Saszkó Maximilián	5.a	x	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Szigethy Oktávián	8.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Szirmai Brúnó	5.b		1	1	1	1		1	1	1	1		1	1	1	1		1	1	1	1	
+Szitás Detre	7.a		1	1	1	1	1	1	1				1	1	1	1	1	1	1	1	1	1
+Szlovák Illés	7.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Szőlősi Anabella	8.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Takács Eleni	7.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Téglási Loránd	6.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Téglási Ottó	5.b		1	1	1	1		1	1	1	1		1	1	1	1		1	1	1	1	
+Tiszai Zsóka	6.b		1		1	1	1	1	1		1	1	1	1	1		1	1	1	1	1	1
+Torday Manfréd	5.b		1	1	1	1		1	1	1	1		1	1	1	1		1	1	1	1	
+Tóth Genovéva	8.a		1	1	1	1	1	1	1	1	1	1	1	1	1			1	1	1	1	1
+Török Irén	8.a		1	1	1	1	1	1	1	1	1	1	1	1	1			1	1	1	1	1
+Tőzsér Arisztid	8.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Turkovics Arianna	7.b	x	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Tyukodi Julianna	7.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Ungár Zénó	5.b		1	1	1	1		1	1	1	1		1	1	1	1		1	1	1	1	
+Ürge Medárd	7.a		1	1	1	1	1	1	1				1	1	1	1	1	1	1	1	1	1
+Vajna Melitta	7.a		1	1	1	1	1	1	1				1	1	1	1	1	1	1	1	1	1
+Vályi Adrienn	7.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Vámosi Lenke	6.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Vári Léna	6.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Vecsei Bendegúz	7.a		1	1	1	1	1	1	1				1	1	1	1	1	1	1	1	1	1
+Verseghy Petronella	7.a		1	1	1	1	1	1	1				1	1	1	1	1	1	1	1	1	1
+Vértesi Auguszt	7.a		1	1	1	1	1	1	1				1	1	1	1	1	1	1	1	1	1
+Vidovits Tamás	6.a	x	1		1	1	1	1		1	1	1	1		1	1	1	1		1	1	1
+Vojnovics Ernő	8.a		1	1	1	1	1	1	1	1	1	1	1	1	1			1	1	1	1	1
+Völgyesi Tordas	5.a		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Vörös Barnabás	6.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Vrobel Brúnó	5.a		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Zakariás Teodóra	7.a		1	1	1	1	1	1	1				1	1	1	1	1	1	1	1	1	1
+Zomer Alajos	7.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Zsatkovics Mihály	7.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Zsigrai Anita	8.a		1	1	1	1	1	1	1	1	1	1	1	1	1			1	1	1	1	1
+Zsoldos Lóránt	6.b		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Zsurzsán Eugén	8.a	x	1	1	1	1		1	1	1	1		1	1	1			1	1	1	1	
