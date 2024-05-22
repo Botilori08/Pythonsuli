@@ -8,7 +8,13 @@ while len(szavak) < 20:
             szavak.append(szo)
             if len(szo) > 6:
                     print("A karakterek száma téves!")
+                    break
             if lefutasok != 0:
-                if (szavak[-1])[-1] == szo[0]:
-                        print("Nem illeszkedett!")
+                if szavak[-1][-1] == szo[0]:
+                     szavak.append(szo)
+                else:
+                     print("Nem illeszkedett") 
+                     break
+            else:
+                lefutasok += 1
     
