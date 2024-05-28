@@ -1,6 +1,6 @@
 def aSzamolo():
     adarab = 0
-    szoveg = input("Kéerek egy szót!: ")
+    szoveg = input("Kérek egy szót!: ")
     betuLista = []
     for e in szoveg:
         if e == 'a':
