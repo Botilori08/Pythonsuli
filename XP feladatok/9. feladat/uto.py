@@ -1,4 +1,4 @@
-print("Gyártó: Boti Lóránt")
+print("Gyártó: Boti Lóránt"+"\n")
 
 '''
              @   @
@@ -13,6 +13,8 @@ sorLista = [(13*" "+"@"+3*" "+"@"),(12*" "+"@"+3*" "+"@"),(11*" "+"@"+3*" "+"@")
 
 for egySor in sorLista:
     print(egySor)
+
+print("\n")
 
 #vagy
 
