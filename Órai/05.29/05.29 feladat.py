@@ -1,4 +1,4 @@
-
+import math
 szam = 1
 szamLista = []
 
@@ -25,6 +25,6 @@ elif abs(pozitiv) > abs(negativ) :
 else:
     print("A pozitív és negatív számok nullától számított távolsága egyenlő!")
 
-listaFele = szamLista[:len(szamLista)//2]
+listaFele = szamLista[math.floor(:len(szamLista)/2)]
 
 print(listaFele)
