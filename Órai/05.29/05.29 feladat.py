@@ -25,6 +25,22 @@ elif abs(pozitiv) > abs(negativ) :
 else:
     print("A pozitív és negatív számok nullától számított távolsága egyenlő!")
 
-listaFele = szamLista[math.floor(:len(szamLista)/2)]
 
-print(listaFele)
+listaFele = szamLista[:math.ceil(len(szamLista)/2)]
+#print(listaFele)
+
+pozitivdb = 0
+negativdb = 0
+for egyElem in listaFele:
+    if egyElem > 0:
+        pozitivdb += 1
+    if egyElem < 0:
+        negativdb += 1
+
+if negativdb > pozitivdb:
+    print("A negatív számokból több van a lista első felében.")
+elif pozitivdb > negativdb:
+    print("A pozitív számokból több van a lista első felében.")
+else:
+    print("A lista első felében a negatív és a pozitív számok darabszáma egyenlő.")
+
