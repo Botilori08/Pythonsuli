@@ -1,0 +1,5 @@
+1. Készítsetek egy függvényt, ami egy számot kér be. Addig folytatódjon, amíg nem szám.
+Ezt a számot adja vissza
+2. Kérjetek be számokat, amíg nem negyatív számot ad meg valaki.
+3. Ezeket a számokat írjuk ki egy fájlba.Egymás alá
+4. Ezeket a számokat töltsük be. Adjuk meg az átlag feletti számok összegét.
