@@ -22,6 +22,7 @@ f = open("szamok.txt","w")
 for egySzam in szamok:
     f.write(str(egySzam) + "\n")
 f.close()
+
 f = open("szamok.txt")
 szamLista = []
 for egySzam in f:
@@ -31,9 +32,9 @@ osszeg = 0
 for egyElem in szamLista:
     osszeg += egyElem
 
-
 atlag = osszeg/len(szamLista)
 atlagFeletti = 0
+print(atlag)
 for egySzam in szamLista:
     if egySzam > atlag:
         egySzam += atlagFeletti
