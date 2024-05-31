@@ -10,7 +10,6 @@ def bekero():
 
 szamok = []
 Ujszam = bekero()
-print(Ujszam)
 while Ujszam >= 0:
     szamok.append(Ujszam)
     if szam < 0:
