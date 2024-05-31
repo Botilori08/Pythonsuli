@@ -1,10 +1,12 @@
-from modul import *
+import modul
 
 
-darabszam = szam()
+darabszam = modul.szam()
+print(darabszam)
 szamLista = []
-while True:
-    szamLista.append(keplet())
+while len(szamLista) < darabszam:
+    szamLista.append(modul.keplet(modul.szam()))
     if len(szamLista) == darabszam:
         break
+
 print(szamLista)

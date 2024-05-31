@@ -1,0 +1,6 @@
+1. Kérjünk be pozitív és negatív számokat 0 végjelig.
+2. Összegezés: külön pozitív
+	       külön negatív
+3. Melyik van távolabb nullától? (Pozitívak vagy negatívak öszzege)
+4. A lista első felében milyen számból van több?
+(Ha páratlan számú a lista: Az első fele legyen nagyobb)
