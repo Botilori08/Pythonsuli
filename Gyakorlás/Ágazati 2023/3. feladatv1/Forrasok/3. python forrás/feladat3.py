@@ -1,4 +1,3 @@
-from collections import Counter
 class Billboard:
     def __init__(self,sor):
         vagas = sor.split(";")
@@ -8,6 +7,14 @@ class Billboard:
         self.elozo = vagas[3]
         self.legjobb = int(vagas[4])
         self.hetszam = int(vagas[5])
+
+    def ujVizsgalat(szam):
+        ujak = 0
+        if szam == "-":
+            ujak+=1
+        return ujak
+            
+
 
 f = open("billboard.csv")
 f.readline()
@@ -22,9 +29,36 @@ for egyHely in sorLista:
     if egyHely.helyezes == bekertHely:
         print("\t A lista {}. helyén szereplő dal: {}: {}".format(bekertHely,egyHely.eloado,egyHely.cim))
 
+
+print("3. feladat:")
+belepokszama = 0
+for egyElem in sorLista:
+    belepokszama += Billboard.ujVizsgalat(egyElem.elozo)
+print(belepokszama)
+    
+
 print("4.feladat")
 eloadok = []
+listaSok = {}
 for egyEloado in sorLista:
     eloadok.append(egyEloado.eloado)
+for egyElem in eloadok:
+    if egyElem in listaSok:
+        listaSok[egyElem]+=1
+    else:
+        listaSok[egyElem] = 1
 
-print(eloadok)
+legtobbnev = list(listaSok)[0]
+print("\t A legtöbbet szereplő előadó(k): {}".format(legtobbnev))
+
+f = open("eloadok.txt","w")
+eloadok = list(listaSok)
+for egyEloado in eloadok:
+        f.write("{}\n".format(egyEloado))
+
+
+
+
+
+
+
