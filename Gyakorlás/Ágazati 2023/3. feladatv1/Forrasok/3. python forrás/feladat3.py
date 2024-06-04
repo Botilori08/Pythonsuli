@@ -8,9 +8,9 @@ class Billboard:
         self.legjobb = int(vagas[4])
         self.hetszam = int(vagas[5])
 
-    def ujVizsgalat(szam):
+    def ujVizsgalat(elozohet,het):
         ujak = 0
-        if szam == "-":
+        if elozohet== "-" and het == 1:
             ujak+=1
         return ujak
             
@@ -33,8 +33,8 @@ for egyHely in sorLista:
 print("3. feladat:")
 belepokszama = 0
 for egyElem in sorLista:
-    belepokszama += Billboard.ujVizsgalat(egyElem.elozo)
-print(belepokszama)
+    belepokszama += Billboard.ujVizsgalat(egyElem.elozo,egyElem.hetszam)
+print("\t A héten {} új belépő volt.".format(belepokszama))
     
 
 print("4.feladat")

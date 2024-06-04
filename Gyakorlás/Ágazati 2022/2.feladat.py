@@ -7,12 +7,16 @@ def haromMedve():
     
     return medvek
 
+lista = haromMedve()
+def korVizsgalo(lista):
+    for i in range(len(lista)):
+        if lista[i][1] > 25:
+            return "Öreg"
+        else:
+            return "Nem öreg"
 
-def korVizsgalo():
-    lista = haromMedve()
-    for egylista in lista:
-        print(egylista)
+        
 
-print(korVizsgalo())
+print(korVizsgalo(lista))
 
 #medve()

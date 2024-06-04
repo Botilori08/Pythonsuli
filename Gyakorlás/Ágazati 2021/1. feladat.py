@@ -10,5 +10,5 @@ while bekertSzam == 0:
 if bekertSzam > len(bekertSzoveg):
     print("Sajnos nincs ilyen betű.")
 else:
-    betuk = 4*bekertSzoveg[bekertSzam]
+    betuk = bekertSzam*bekertSzoveg[bekertSzam]
     print(betuk)
