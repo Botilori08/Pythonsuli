@@ -4,7 +4,7 @@ def haromMedve():
     medvek = []
     while len(medvek) < 3:
         medvek.append(medve())
-    
+
     return medvek
 
 lista = haromMedve()
